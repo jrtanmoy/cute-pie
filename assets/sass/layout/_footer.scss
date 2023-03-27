@@ -1,0 +1,210 @@
+.footer-area {
+    background: #091727;
+
+
+}
+
+.footer-top {
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    h2 {
+        max-width: 615px;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: 600;
+        color: $white;
+    }
+}
+
+.email-subscribe {
+    padding-top: 20px;
+
+    input {
+        max-width: 400px;
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+    }
+
+    input,
+    input::placeholder {
+        font-size: 14px;
+        color: $black;
+    }
+
+    button {
+        background-color: $primary-bg;
+        border: none;
+        color: $theme-color;
+        font-weight: 600;
+        padding: 11px 36px;
+        border-radius: 4px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: $theme-color;
+            color: $white;
+        }
+    }
+}
+
+.footer-middle {
+    padding: 75px 70px 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    .footer-middle-left {
+        h3 {
+            font-size: 26px;
+            color: $white;
+            line-height: 40px;
+        }
+
+        ul {
+            padding-top: 25px;
+            display: flex;
+
+            li {
+                color: $white;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                i {
+                    font-size: 20px;
+                }
+
+                p {
+                    color: $white;
+                    font-size: 14px;
+                }
+
+            }
+
+            li:last-child {
+                margin-left: 10%;
+            }
+        }
+    }
+
+    .footer-middle-middle {
+
+        color: $white;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        h6 {
+            font-size: 16px;
+            font-weight: 700px;
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+
+            a {
+                color: $white;
+                font-size: 15px;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+       
+    }
+
+    .footer-middle-right {
+        .address {
+            // max-width: 185px;
+            color: $white;
+            padding-top: 25px;
+        }
+
+        .phone-number {
+            padding-top: 25px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+
+            i {
+                color: $white;
+                font-size: 25px;
+                margin-right: 10%;
+            }
+
+            p {
+                color: $white;
+                font-size: 22px;
+            }
+        }
+
+        .footer-button-group {
+            padding-top: 25px;
+
+            button {
+                padding: 7px 15px;
+                background-color: $primary-bg;
+                border: none;
+                color: $theme-color;
+                border-radius: 4px;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+
+            button:first-child {
+                margin-right: 10px;
+            }
+        }
+
+        .email-address {
+            display: inline-block;
+            padding-top: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            color: $white;
+            text-decoration: underline;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+.payment-social{
+    padding: 35px 0;
+    .payment{
+        display: flex;
+        align-items: center;
+        p{
+            color: $white;
+            margin-right: 8%;
+        }
+    }
+    .social{
+        display: flex;
+        align-items: center;
+        p{
+            color: $white;
+            margin-right: 8%;
+        }
+        ul{
+            li{
+                a{
+                    color: $white;
+                    transition: all 0.2s ease-in-out;
+        
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
