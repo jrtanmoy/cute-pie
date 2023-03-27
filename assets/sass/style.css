@@ -229,27 +229,93 @@ img {
 
 .payment-social {
   padding: 35px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.payment-social .payment {
+.payment-social .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment-social .container .payment {
   display: flex;
   align-items: center;
 }
-.payment-social .payment p {
+.payment-social .container .payment p {
   color: #fff;
-  margin-right: 8%;
+  margin-right: 70px;
 }
-.payment-social .social {
+.payment-social .container .social {
   display: flex;
   align-items: center;
 }
-.payment-social .social p {
+.payment-social .container .social p {
   color: #fff;
-  margin-right: 8%;
+  margin-right: 40px;
 }
-.payment-social .social ul li a {
+.payment-social .container .social ul {
+  display: flex;
+  align-items: center;
+}
+.payment-social .container .social ul li {
+  margin-left: 22px;
+  color: #fff;
+}
+.payment-social .container .social ul li a {
   color: #fff;
   transition: all 0.2s ease-in-out;
+  position: relative;
 }
-.payment-social .social ul li a:hover {
+.payment-social .container .social ul li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.payment-social .container .social ul li a .tooltiptext {
+  visibility: hidden;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 12px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 100%;
+}
+.payment-social .container .social ul li a:hover .tooltiptext {
+  transition-delay: 1s;
+  visibility: visible;
+}
+
+.footer-bottom {
+  padding: 35px 0;
+}
+.footer-bottom .terms-privacy {
+  display: flex;
+  align-items: center;
+}
+.footer-bottom .terms-privacy li {
+  margin-right: 35px;
+}
+.footer-bottom .terms-privacy li a {
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+.footer-bottom .terms-privacy li a:hover {
   opacity: 0.5;
+}
+.footer-bottom .copyright {
+  padding: 25px 0;
+  color: #fff;
+  font-size: 14px;
+}
+.footer-bottom .footer-description small {
+  max-width: 820px;
+  display: inline-block;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+}
+.footer-bottom .footer-description small:first-child {
+  padding-bottom: 25px;
 }/*# sourceMappingURL=style.css.map */
