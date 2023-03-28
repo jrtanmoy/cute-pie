@@ -1,18 +1,123 @@
 
 .header-area{
     position: relative;
+    background: $primary-bg;
 }
 
 // header top section start 
 .header-top {
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 2px solid $white;
+    .top-title {
+        font-size: 14px;
+        color: $theme-font;
+    }
+    .them-color {
+        color: $theme-color;
+    }
+    .close {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        i {
+            font-size: 18px;
+            transition: .3s;
+            cursor: pointer;
+            color: $theme-font;
+            font-weight: 400;
+            &:hover{
+                transform: rotate(90deg);
+            }
+        }
     background: $primary-bg;
     .top-title {
         font-size: 18px;
     }
+    }
 }
 // header top section end  
 
+// header middle style start 
 
+.middle-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 40px 0;
+    .middle-left {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        justify-content: space-between;
+    }
+    .middle-right {
+        width: 24.7%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        li {
+            margin: 0 10px;
+            color: $theme-font;
+            span {
+                margin: 0 2px;
+            }
+        }
+    }
+}
+.product-search-wrap {
+    select {
+        max-width: 140px;
+        width: 100%;
+        min-height: 48px;
+        height: 48px;
+        padding: 0 15px;
+        outline: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    #category {
+        background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat white;
+        background-position: calc(100% - 0.75rem) center !important;
+        -moz-appearance:none !important;
+        -webkit-appearance: none !important; 
+        appearance: none !important;
+        option, optgroup {
+            font-size: 14px;
+            color: $theme-font;
+            font-weight: 300;
+        }
+    }
+    .product-search-input {
+        position: relative;
+        input {
+            min-width: 425px;
+            width: 100%;
+            min-height: 48px;
+            height: 48px;
+            padding: 15px;
+            outline: none;
+            border-radius: 0px;
+            border: 1px solid;
+            border-left: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            cursor: pointer;
+            color: $theme-font;
+            transition: all .3s ease;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}
+// header middle style end  
 
 
 
