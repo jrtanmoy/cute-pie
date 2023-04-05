@@ -1,3 +1,265 @@
+// common color
+.yellow-color {
+    color: #FFCA1F;
+  }
+  
+  .theme-font {
+    color: #091727;
+  }
+  
+  .color-white {
+    color: #fff;
+  }
+
+
+// shop category section start 
+
+.shop-category-area {
+    background: #ebf0f5;
+    .food-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 340px) {
+            column-gap: 5px;
+        }
+        li{
+            margin-bottom: 30px;
+            a {
+                img {
+                    border-radius: 50%;
+                    max-height: 150px;
+                    max-width: 150px;
+                    background: $white;
+                    object-fit: contain;
+                    @media (max-width: 340px) {
+                        max-width: 140px;
+                        max-height: 140px;
+                    }
+                }
+                .food-name{
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding-top: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// shop category seciont end 
+
+// delivery area start
+.delivery-area {
+    .slick-slider {
+        margin: 0 -5px;
+    }
+    .slick-slide {
+        margin: 0 5px;
+    }
+    .delivery-card-active {
+        button {
+            background: $primary-bg;
+            color: $theme-font;
+            position: absolute;
+            top: -50px;
+            height: 30px;
+            width: 40px;
+            border: 1px solid $theme-font;
+            line-height: 30px;
+            font-size: 20px;
+            transition: all .3s ease;
+            &:hover {
+                background: $theme-color;
+                color: $white;
+                border: 1px solid $theme-color;
+            }
+        }
+        .pull-left {
+            right: 50px;
+        }
+        .pull-right {
+            right: 5px;
+        }
+    }
+} 
+// delivery area end  
+
+
+
+// featured products area start 
+
+.featured-product-area {
+    background: #ebf0f5;
+}
+// featured products area end
+
+
+// discount-banner-area start 
+
+.discount-banner-area{
+    padding-top: 40px;
+}
+
+.banner-img-text {
+    padding: 30px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 340px;
+    border-radius: 5px;
+}
+.food-brand {
+    padding-bottom: 20px;
+    img {
+        max-width: 150px;
+        @media (max-width: 991px) {
+           max-width: 100px;
+        }
+    }
+}
+.food-title {
+    font-size: 32px;
+    font-weight: 700;
+    width: 50%;
+    line-height: 40px;
+    margin-bottom: 10px;
+    @media (max-width: 991px) {
+        font-size: 27px;
+        font-weight: 500;
+        width: 100%;
+    }
+}
+.discount-amount {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    display: block;
+}
+.discount-amount-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 56px;
+}
+.food-title-second {
+    font-size: 30px;
+    font-weight: 700;
+    width: 70%;
+    line-height: 40px;
+    margin-bottom: 10px;
+    @media (max-width: 991px) {
+        font-size: 22px;
+        width: 100%;
+        line-height: 32px;
+    }
+}
+.amount-start {
+    .start-from {
+        font-size: 14px;
+        color: $white;
+        display: block;
+        font-weight: 300;
+        line-height: 20px;
+        @media (max-width: 991px) {            
+            font-size: 13px;
+        }
+    }
+    font-size: 30px;
+    color: $white;
+    font-weight: 600;
+    padding: 20px 18px;
+    border: 1px solid $white;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 32px;
+    @media (max-width: 991px) {
+        padding: 10px;
+        font-size: 22px;
+    }
+}
+.brand-logo {
+    display: block;
+    img {
+        width: 15px;
+        margin-right: 10px;
+    }
+    font-size: 15px;
+    color: $white;
+    font-weight: 300;
+    padding-bottom: 90px;
+}
+.second-banner {
+    padding: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    height: 100%;
+    max-height: 320px;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+.second-banner-conten {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    @media (max-width:991px) {
+        width: 100%;
+        text-align: end;
+    }
+    .logo-img {
+        max-width: 150px;
+        text-align: center;
+        display: inline;
+        img {
+            max-width: 150px;
+            margin-bottom: 20px;
+            @media (max-width:991px) {
+                max-width: 130px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .little-paw-text {
+        font-size: 28px;
+        color: $white;
+        line-height: 32px;
+        font-weight: 700;
+        margin: 15px 0;
+        padding-bottom: 100px;
+        @media (max-width:991px) {
+            font-size: 20px;
+            line-height: 28px;
+
+        }
+    }
+    .discount-text {
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -35%;
+        @media (max-width:991px) {
+            right: 0;
+            bottom: 50%;
+        }
+    }
+}
+.second-small-banner {
+    display: block;
+    text-align: left;
+}
+// discount-banner-area end 
+
+
+
+
+
 //food-bannar
 .food-bannar {
     height: 100%;
@@ -87,7 +349,7 @@
 
 
 .bestsellers {
-    margin: 70px 0;
+    margin: 0 0 70px;
     background-color: $primary-bg;
     padding: 70px 0;
 }
