@@ -1,82 +1,181 @@
 
-
-//mobile menu start 
-$(".mobile-btn").click(function(){
-  $(".responsive-menu").toggleClass("active");
-  $(".blank-div").toggleClass("active");    
-});
-$(".blank-div").click(function(){
-  $(".responsive-menu").removeClass("active");
-  $(this).removeClass("active")
-});
-//mobile menu end
-
-// 
-document.querySelectorAll(".menu li a").forEach((link) => {
-  if (link.href === window.location.href) {
-      link.classList.add("menu-active");
-      link.setAttribute("aria-current", "page");
-  }
-});
-// document.querySelectorAll(".menu li").forEach((ele) =>
-//   ele.addEventListener("click", function (event) {
-//     event.preventDefault();
-//     document
-//       .querySelectorAll(".menu li")
-//       .forEach((ele) => ele.classList.remove("menu-active"));
-//     this.classList.add("menu-active")
-//   })
-// );
+// header top remove
+$('.close').on('click', function(){
+  $(".header-top").addClass('active');  
+})
 
 
 
-// hero slider active 
-$('.hero-wrapper').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-});
 
-// agents slide
-if ($(".agents-wrapper").length) {
-  $('.slider-for').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav'
-  });
-  $('.slider-nav').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      focusOnSelect: true,
-      dots:true,
-      arrows: false,
-  });
+// header modal list start
+
+var paymentWay = document.getElementById('payment_way');
+function showPayment (){
+  paymentWay.classList.toggle("active");
+}
+
+var language = document.getElementById('languageOption');
+function showLanguage () {
+  language.classList.toggle('show')
 }
 
 
-// testimonial active 
-$('.testimoni-wrapper').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "320px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+// let language = document.getElementsByClassName('.language');
+// $('.payment').on('click', function(){
+//   $(this).on('click', function(){
+//     $('.payment-way').removeClass('active')
+//   })
+//   $('.payment-way').addClass('active')
+// })
+
+
+// login account modal 
+$('#login_account').click(function(){
+  $("#myModal").attr("style", "display:block")
+  $(".blank-div").toggleClass("active");  
+})
+$('#closeBtn').click(function(){
+  $("#myModal").attr("style", "display:none")
+})
+$('.blank-div').click(function() {
+  $("#myModal").attr("style", "display:none")
+  $(this).removeClass("active")  
+})
+
+
+// hero slider section start 
+
+$(document).ready(() => {
+  $('.hero-slider__wrapper').slick({
+    autoplay: false,
+    autoplaySpeed: 1000,
     arrows: true,
     dots: true,
     nextArrow: "<button class='slick-prev pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
     prevArrow: "<button class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    
+  })
+})
+// hero slider section end 
 
+
+
+
+
+// week deals active 
+$(function(){
+  $('.card-container-active').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    // autoplaySpeed: 1000,
+    arrows: true,
+    dots: false,
+    nextArrow: "<button class='slick-prev pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    prevArrow: "<button class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+});
+})
+
+// fresh delivery card active 
+
+$('.delivery-card-active').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: false,
+    // autoplaySpeed: 1000,
+    arrows: true,
+    dots: false,
+    nextArrow: "<button class='slick-prev pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    prevArrow: "<button class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
 });
 
-// Brand active 
-$('.brand-active').slick({
-  slidesToShow: 4,
+
+// menu tab slider 
+$('.slider-active').slick({
+  slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 1000,
-  arrows: false,
-  dots: true,
+  infinite: true,
+  autoplay: false,
+  // autoplaySpeed: 1000,
+  arrows: true,
+  dots: false,
+  nextArrow: "<button class='slick-prev pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  prevArrow: "<button class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
   responsive: [
     {
       breakpoint: 1024,
@@ -97,7 +196,7 @@ $('.brand-active').slick({
     {
       breakpoint: 576,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     }
@@ -106,32 +205,57 @@ $('.brand-active').slick({
     // instead of a settings object
   ]
 });
-
-
-//pagination active
-
-$('.pagination-list a').on('click',function(){
-  $('.pagination-list a').removeClass('active');
-  $(this).addClass('active')
+$('button[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+  $('.slider-active').slick('setPosition');
 })
-
-
-// object image actve slide 
-// $('.').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   nextArrow: "",
-//   prevArrow: "",
-//   dots: true,
+// $(document).on("#home-tab",function(){
+//   console.log('hello click')
+//   $('.slider-active').slick('refresh');
 // });
-$('.object-img').slick({
-  slidesToShow: 1,
+
+// $(".slider-active").owlCarousel({
+//   items: 4,
+// });
+
+
+// bestseller active
+
+$('.bestseller-active').slick({
+  slidesToShow: 5,
   slidesToScroll: 1,
+  autoplay: false,
+  // autoplaySpeed: 1000,
   arrows: true,
   dots: false,
-  nextArrow: "<button class='slick-prev pull-right'>NEXT OBJECT</button>",
-  prevArrow: "<button class='slick-prev pull-left'>Previous OBJECT</button>",
-
+  // nextArrow: "<button class='slick-prev pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  // prevArrow: "<button class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
-
 
