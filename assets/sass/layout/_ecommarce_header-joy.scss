@@ -117,25 +117,29 @@
                 margin: 0 2px;
             }
         }
-        .custome-select{
+
+        .custome-select {
             font-size: 14px;
             background-color: $primary-bg;
             outline: none;
             box-shadow: none;
             padding: 10px 15px;
             width: 90px;
-            
+
         }
-        .select-en{
+
+        .select-en {
             width: 60px;
             padding: 10px 5px;
         }
-        .dropdown{
-            .dropdown-toggle{
+
+        .dropdown {
+            .dropdown-toggle {
                 color: $theme-font;
                 font-size: 14px;
             }
-            .dropdown-menu{
+
+            .dropdown-menu {
                 min-width: 250px;
                 max-width: 250px;
             }
@@ -1063,13 +1067,14 @@
             }
         }
     }
+
     // dropdown 
-   
-    .dropdown{
-        .custome-badge{
+
+    .dropdown {
+        .custome-badge {
             background-color: #ffa600;
             padding: 3px 5px;
-            position:absolute;
+            position: absolute;
             font-size: 12px;
             font-weight: 700;
             border-radius: 3px;
@@ -1080,10 +1085,11 @@
             justify-content: center;
             top: -18px;
             right: -4px;
+
             // for bottom triangle
-            &::after{
+            &::after {
                 content: "";
-                position:absolute;
+                position: absolute;
                 top: 18px;
                 right: 6px;
                 border-left: 4px solid transparent;
@@ -1092,60 +1098,70 @@
             }
 
         }
-        .dropdown-menu{
+
+        .dropdown-menu {
             min-width: 320px;
             max-width: 320px;
         }
     }
-   
-    .cart-items{
+
+    .cart-items {
         min-height: 250px;
         max-height: 250px;
         padding: 0 15px 15px;
         border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
         overflow-y: scroll;
     }
-       // cart-single-item
-       .cart-single-item{
+
+    // cart-single-item
+    .cart-single-item {
         padding-top: 15px;
         display: flex;
         align-items: center;
         column-gap: 10px;
-        img{
+
+        img {
             max-width: 80px;
             width: 100%;
         }
-        .single-item-right{
+
+        .single-item-right {
             width: calc(100% - 80px);
-            .item-title{
+
+            .item-title {
                 display: block;
                 font-size: 16px;
                 font-weight: 600;
                 transition: all 0.3s ease-in-out;
-                &:hover{
+
+                &:hover {
                     color: $theme-color;
                 }
             }
-            .item-quantity{
+
+            .item-quantity {
                 display: block;
                 font-size: 14px;
             }
         }
     }
-    .dropdown-bottom{
+
+    .dropdown-bottom {
         padding: 10px 20px;
-        .subtotal{
+
+        .subtotal {
             font-size: 15px;
             font-weight: 600;
         }
-     
-        .dropdown-btn{
+
+        .dropdown-btn {
             padding-top: 10px;
             display: flex;
             column-gap: 8px;
-            
+
         }
-        a{
+
+        a {
             font-size: 15px;
             font-weight: 600;
             padding: 5px 8px;
@@ -1480,16 +1496,16 @@
         float: right;
         margin-left: 5px;
         font-family: 'fontawesome';
-//      -webkit-transition: all .5s;
-//       transition: all .5s;
+        //      -webkit-transition: all .5s;
+        //       transition: all .5s;
     }
 
     .active-res-page:after {
         content: "\f107";
         /* Unicode character for "down angle" */
         transition: all 0.4s ease-in-out;
-        
-        
+
+
     }
 
     /* Style the accordion panel. Note: hidden by default */
@@ -1503,7 +1519,8 @@
             color: $theme-font;
             display: block;
             transition: all 0.4s ease-in-out;
-            &:hover{
+
+            &:hover {
                 color: $theme-color;
             }
         }
@@ -1530,10 +1547,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
+            background-color: $primary-bg;
+            height: 60px;
+            &:hover{
+                border: 1px solid rgba($color: #000000, $alpha: 1);
+                background-color: white;
+            }
 
             img {
-                max-width: 80px;
+                max-width: 70px;
                 width: 100%;
             }
 
@@ -1550,14 +1572,6 @@
                 }
             }
         }
-    }
-}
-
-.by-brand {
-    a {
-        background-color: $primary-bg;
-        height: 50px;
-
     }
 }
 

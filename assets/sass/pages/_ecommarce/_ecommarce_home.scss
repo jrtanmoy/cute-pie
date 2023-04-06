@@ -589,20 +589,7 @@
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
 }
 
-// section title
-.section-title {
-    font-size: 32px;
-    font-weight: 700;
-    padding-bottom: 30px;
 
-    @media (max-width: 991px) {
-        font-size: 30px;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 25px;
-    }
-}
 
 // follow us
 .follow-us {

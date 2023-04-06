@@ -61,3 +61,24 @@ img{
 .d-flex {
     display: flex;
 }
+
+.ptop-15{
+    padding-top: 15px;
+}
+.p-left-14{
+    padding-left: 14px;
+}
+.theme-color{
+    color: $theme-color;
+}
+.common-a{
+    color: $theme-font;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $theme-color;
+        
+    }
+}
+.text-under{
+    text-decoration: underline;
+}

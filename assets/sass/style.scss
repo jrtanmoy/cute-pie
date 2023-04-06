@@ -11,6 +11,10 @@
 @import "components/button";
 @import "components/section-title";
 @import "components/card";
+@import "components/pagination";
+@import "components/select";
+@import "components/checkbox";
+@import "components/range";
 
 @import "layout/ecommarce_header-joy";
 @import "layout/hero-slider";
@@ -18,8 +22,9 @@
 
 
 //page
-@import "pages/ecommarce_home";
-@import "pages/ecommarce_shopPage"
+@import "pages/_ecommarce/ecommarce_home";
+@import "pages/_ecommarce/ecommarce_shopPage";
+@import "pages/_ecommarce/ecommarce_shop_item-details";
 
 
 

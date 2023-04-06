@@ -29,483 +29,93 @@
                     <a href="#">Home</a>
                     <i class="fa fa-angle-right"></i>
                 </li>
-                <li>Shop</li>
+                <li>
+                    <a href="#">Shop</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#">Puppy Toys</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>Bootique Plush Spider Dog Toy, X-Small</li>
             </ul>
         </div>
     </div>
     <!-- camp link end -->
     <!-- shop card section start-->
-    <section class="shop-main-content">
+    <section class="shop-item-details-content">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <h2 class="section-title">Shop</h2>
-                <span>
-                    <i id="filter" onclick="openShopNav()" class="fa fa-filter"></i>
-                </span>
-            </div>
+            <h2 class="section-title">Shop</h2>
             <div class="row">
-                <div class="col-lg-3 ">
-                    <div class="shop-left">
-                        <div>
-                            <a href="javascript:void(0)" class="closeShopbtn" onclick="closeShopNav()">&times;</a>
-                        </div>
-                        <div class="shop-by-categories">
-                            <h4 class="f-16-title">
-                                Shop by Categories
-                            </h4>
-                            <ul class="shop-by-categories-list">
-                                <li>
-                                    <a href="#">Care</a>
-                                </li>
-                                <li>
-                                    <a href="#">Dog treats</a>
-                                </li>
-                                <li>
-                                    <a href="#">Dry food</a>
-                                </li>
-                                <li>
-                                    <a href="#">Grooming</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="">
-                                        <div class="d-flex justify-content-between">
-                                            <span>Pet pharmacy</span>
-                                            <a class="custom-collapse" data-bs-toggle="collapse" href="#PetPharmacy"
-                                                role="button" aria-expanded="false" aria-controls="PetPharmacy">
-                                                <i class="fa fa-angle-right collapse-right"></i>
-                                                <i class="fa fa-angle-down collapse-down"></i>
-                                            </a>
-                                        </div>
-                                    </a>
-                                    <div class="collapse" id="PetPharmacy">
-                                        <div class="card card-body border-0 pb-0">
-                                            <ul>
-                                                <li class="collapse-list">
-                                                    <a href="#" class="collapse-link">Dental Care</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="collapse-link">Recovery Cones</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Supplements</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="">
-                                        <div class="d-flex justify-content-between">
-                                            <span>Toys & accessories</span>
-                                            <a class="custom-collapse" data-bs-toggle="collapse" href="#toysAccessories"
-                                                role="button" aria-expanded="false" aria-controls="toysAccessories">
-                                                <i class="fa fa-angle-right collapse-right"></i>
-                                                <i class="fa fa-angle-down collapse-down"></i>
-                                            </a>
-                                        </div>
-                                    </a>
-                                    <div class="collapse" id="toysAccessories">
-                                        <div class="card card-body border-0 pb-0">
-                                            <ul>
-                                                <li class="collapse-list">
-                                                    <a href="#" class="collapse-link">Chew Toys</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="collapse-link">Plush Toys</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="collapse-link">Puppy Toys</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Transporters</a>
-                                </li>
-                                <li>
-                                    <a href="#">Uncategorized</a>
-                                </li>
-                                <li>
-                                    <a href="#">Wet food</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-by-price">
-                            <div class="row">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h6 class="f-16-title">
-                                        Price
-                                    </h6>
-                                    <a href="#" class="cls-btn">Any price</a>
-                                </div>
-                                <div>
-                                    <input type="range" class="js-range-slider" name="priceRange" value=""
-                                        data-skin="round" data-type="double" data-min="0" data-max="200"
-                                        data-grid="false" id="customRange1" />
-
-                                    <ul class="d-flex range-price align-items-center justify-content-between mt-2">
-                                        <li>
-                                            <label class="text-dark">Min Price</label>
-                                            <input name="minPrice" type="number" id="shopItemMinPrice" maxlength="4"
-                                                value="0" class="from" onchange="myFun()" />
-                                        </li>
-                                        <li>
-                                            <label class="text-dark">Max Price</label>
-                                            <input name="maxPrice" type="number" id="shopItemMaxPrice" maxlength="4"
-                                                value="200" class="to" />
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shop-by-brand">
-                            <ul class="by-item row g-3 by-brand">
-                                <h6 class="f-16-title">
-                                    Brand
-                                </h6>
-                                <li class="col-6">
-                                    <a href="#">
-                                        <img src="/assets/images/best-food.svg" alt="Food Img">
-                                    </a>
-                                </li>
-                                <li class="col-6">
-                                    <a href="#">
-                                        <img src="/assets/images/bone.svg" alt="Food Img">
-                                    </a>
-                                </li>
-                                <li class="col-6">
-                                    <a href="#">
-                                        <img src="/assets/images/coral.svg" alt="Food Img">
-                                    </a>
-                                </li>
-                                <li class="col-6">
-                                    <a href="#">
-                                        <img src="/assets/images/dog-cat.svg" alt="Food Img">
-                                    </a>
-                                </li>
-                                <li class="col-6">
-                                    <a href="#">
-                                        <img src="/assets/images/flying-bird.svg" alt="Food Img">
-                                    </a>
-                                </li>
-                                <li class="col-6">
-                                    <a href="#">
-                                        <img src="/assets/images/kangaroo.svg" alt="Food Img">
-                                    </a>
-                                </li>
-                                <li class="col-6">
-                                    <a href="#">
-                                        <img src="/assets/images/littlep.svg" alt="Food Img">
-                                    </a>
-                                </li>
-                                <li class="col-6">
-                                    <a href="#">
-                                        <img src="/assets/images/natural-foods.svg" alt="Food Img">
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="shop-by-color">
-                            <h6 class="f-16-title">
-                                Color
-                            </h6>
-                            <ul class="check-list">
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#">
-                                                <span class="color-circle" style="background-color: blue;"></span>
-                                                Blue
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#">
-                                                <span class="color-circle" style="background-color: green;"></span>
-                                                Green
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#">
-                                                <span class="color-circle" style="background-color: orange;"></span>
-                                                Orange
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#">
-                                                <span class="color-circle" style="background-color: Red;"></span>
-                                                Red
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-by-pets">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h6 class="f-16-title">
-                                    Pets
-                                </h6>
-                                <a href="#" class="cls-btn">Clear</a>
-                            </div>
-                            <ul class="check-list">
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#" class="p-left-14">
-                                                Bird
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#" class="p-left-14">
-                                                Cat
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#" class="p-left-14">
-                                                Dog
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#" class="p-left-14">
-                                                Fish
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#" class="p-left-14">
-                                                Reptile
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check f-13">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <a href="#" class="p-left-14">
-                                                Small pet
-                                            </a>
-                                        </label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="packaging-type">
-                            <h6 class="f-16-title">
-                                Packaging type
-                            </h6>
-                            <ul class="packaging-type-list">
-                                <li class="packaging-single-item">
-                                    <a href="#">Paper</a>
-                                </li>
-                                <li class="packaging-single-item">
-                                    <a href="#">Plastic</a>
-                                </li>
-                                <li class="packaging-single-item">
-                                    <a href="#">Tin</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-by-weight">
-                            <div class="row">
-                                <h6 class="f-16-title">
-                                    Weight
-                                </h6>
-                                <div>
-                                    <input type="range" class="js-range-slider" name="priceRange" value=""
-                                        data-skin="round" data-type="double" data-min="4" data-max="33"
-                                        data-grid="false" id="customRange2" />
-
-                                    <ul class="d-flex range-price align-items-center justify-content-between mt-2">
-                                        <li>
-                                            <label class="text-dark">Min Weight</label>
-                                            <input name="minWeight" type="number" id="shopItemMinWeight" maxlength="4"
-                                                value="4" class="from" onchange="myFun()" />
-                                        </li>
-                                        <li>
-                                            <label class="text-dark">Max Weight</label>
-                                            <input name="maxWeight" type="number" id="shopItemMaxWeight" maxlength="4"
-                                                value="33" class="to" />
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rating">
-                            <h6 class="f-16-title">
-                                Rating
-                            </h6>
-                            <ul>
-                                <li class="ptop-15">
-                                    <div class="star-rating">
-                                        <div class="back-stars">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <div class="front-stars" style="width: 100%">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ptop-15">
-                                    <div class="star-rating">
-                                        <div class="back-stars">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <div class="front-stars" style="width: 80%">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ptop-15">
-                                    <div class="star-rating">
-                                        <div class="back-stars">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <div class="front-stars" style="width: 60%">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ptop-15">
-                                    <div class="star-rating">
-                                        <div class="back-stars">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <div class="front-stars" style="width: 40%">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ptop-15">
-                                    <div class="star-rating">
-                                        <div class="back-stars">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <div class="front-stars" style="width: 20%">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="reset">
-                            <a href="#" class="common-button">Reset all</a>
-                        </div>
+                <div class="col-lg-5">
+                    <div class="shop-item-left">
+                        <img src="../assets/images/e-com-shop-item/shop-item-details1.jpg" alt="item">
                     </div>
                 </div>
-                <div class="col-lg-9">
-                    <div class="shop-right">
-                        <div class="shop-right-top">
-                            <select class="form-select ecom-custom-select" aria-label="Default select example">
-                                <option selected>Default sorting</option>
-                                <option value="1">Sort by popularity</option>
-                                <option value="2">Sort by average rating</option>
-                                <option value="3">Sort by latest</option>
-                                <option value="4">Sort by price: low to high</option>
-                                <option value="5">Sort by price: high to low</option>
-                            </select>
-                            <div class="show-and-sorting">
-                                <p class="f-13">Showing all 16 results</p>
-                                <div class="form-check f-13">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Only products on sale
-                                    </label>
+                <div class="col-lg-7">
+                    <div class="shop-item-right">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="../assets/images/e-com-shop-item/coral .svg" alt="item">
+                                <h2 class="section-title">Bootique Plush Spider Dog Toy, X-Small</h2>
+                                <p class="f-13">SKU: 3569227</p>
+                                <ul>
+                                    <li class="ptop-15 d-flex align-items-center">
+                                        <div class="star-rating me-2">
+                                            <div class="back-stars">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <div class="front-stars" style="width: 20%">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="f-13">(1 customer review)</p>
+                                    </li>
+                                </ul>
+                                <h3 class="section-subtitle theme-color ptop-15">$3.99</h3>
+                                <div class="chose-quantity">
+                                    <div class="change-qty">
+                                        <i class="fa fa-minus"></i>
+                                        <p>1</p>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <a href="#" class="common-button">
+                                        <i class="fa fa-cart-plus me-1"></i>
+                                        Add to cart</a>
                                 </div>
+                                <ul class="ptop-15">
+                                    <li>
+                                        <a href="#" class="f-13 common-a text-under">
+                                            <i class="fa fa-heart-o me-1"></i>
+                                            Add to wishlist
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="ptop-15 f-13">
+                                    Category:
+                                    <a href="#" class="common-a">Puppy Toys</a>
+                                </p>
+                                <p class=" f-13">
+                                    Tags:
+                                    <a href="#" class="common-a">Dog,</a>
+                                    <a href="#" class="common-a">Organic</a>
+                                </p>
+                                <ul class="ptop-15 social-link-list">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="option">
-                            <ul class="option-list f-13">
-                                <li>
-                                    Pets: Dog
-                                </li>
-                                <li>
-                                    <a href="#">Reset</a>
-                                </li>
-                                <li>
-                                    <a href="#">Share</a>
-                                </li>
-                            </ul>
                         </div>
                         <div class="shop-card-content">
                             <div class="single-card">
