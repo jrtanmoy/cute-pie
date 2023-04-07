@@ -24,8 +24,12 @@
 @import "layout/footer";
 
 
-// for community layout
+// for community
 @import "layout/community/communityHeader";
+
+@import "components/community/communityBtn";
+
+@import "pages/community/communityHome";
 
 
 
