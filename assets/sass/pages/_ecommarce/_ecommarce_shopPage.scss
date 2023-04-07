@@ -74,12 +74,14 @@
     margin-top: 40px;
 
     .breadcumb {
-        display: flex;
+        // display: flex;
+        // flex-wrap: wrap;
         font-size: 13px;
         border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
         padding-bottom: 15px;
 
         li {
+            display: inline;
             margin-right: 10px;
 
             i {
@@ -362,35 +364,5 @@
 
 .accordian-area {
     margin-top: 20px;
-
-    .accordion {
-        margin-top: 40px;
-        --bs-accordion-btn-focus-border-color: #ecfe86;
-        --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(242, 231, 11, 0.8);
-
-        .accordion-item {
-            .accordion-button:not(.collapsed) {
-                color: $theme-font;
-                background-color: $theme-color;
-            }
-
-            .accordion-button::after {
-                content: "\f067";
-                background-image: none;
-                font-family: fontawesome;
-            }
-
-            .accordion-button:not(.collapsed)::after {
-                content: "\f068";
-                background-image: none;
-                font-family: fontawesome;
-                transform: rotate(0deg);
-            }
-
-        }
-
-        .accordion-button:focus {
-            box-shadow: 0 0 0 0.25rem rgba($theme-color, .5);
-        }
-    }
+   
 }

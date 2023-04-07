@@ -15,16 +15,26 @@
 @import "components/select";
 @import "components/checkbox";
 @import "components/range";
+@import "components/accordion";
+@import "components/form";
+@import "components/form-check";
 
 @import "layout/ecommarce_header-joy";
 @import "layout/hero-slider";
 @import "layout/footer";
 
 
+// for community layout
+@import "layout/community/communityHeader";
+
+
+
+
 //page
 @import "pages/_ecommarce/ecommarce_home";
 @import "pages/_ecommarce/ecommarce_shopPage";
 @import "pages/_ecommarce/ecommarce_shop_item-details";
+@import "pages/_ecommarce/ecommarce_cart";
 
 
 
