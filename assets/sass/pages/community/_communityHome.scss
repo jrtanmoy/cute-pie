@@ -3,7 +3,7 @@
     background: #F4F7FC;
     min-height: 100vh;
     position: relative;
-    @media (max-width: 1400px) {
+    @media (max-width: 1399px) {
         padding: 100px 0;
     }
     @media (max-width: 992px) and (min-width:768px) {
@@ -12,7 +12,7 @@
 }
 // left sidet start 
 .news-feed-left {
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         display: none;
     }
 }
@@ -363,11 +363,10 @@
                 }
             }
             .dropdown-menu {
-                box-shadow: rgba(0, 0, 0, 0.05) 0px 0.5rem 1rem;
+                box-shadow: 3px 3px 5px 6px #ccc;
                 background: rgb(255, 255, 255);
-                // padding: 8px 15px;
                 position: absolute !important;
-                inset: 17px 0px 0 auto !important;
+                inset: 25px 0px 0 auto !important;
                 transform: none !important;
                 width: 160px;
                 height: 130px;
@@ -454,7 +453,13 @@
                 top: 0;
                 line-height: 60px;
                 right: 20px;
-                color: #6B7C8F;
+                a {
+                    color: #6B7C8F;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
             }
         }
     }
@@ -701,7 +706,7 @@
     border-radius: 5px;
     overflow-y: auto;
     height: 100vh;
-    @media (max-width:1400px) and (min-width:992px) {
+    @media (max-width:1399px) and (min-width:992px) {
         display: none;
     }
     @media (max-width: 768px) {

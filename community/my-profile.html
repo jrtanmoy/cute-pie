@@ -24,10 +24,13 @@
                 <a href="#"><img src="../assets/images/community/logo.png" alt=""></a>
             </div>
             <div class="community-header-content">
-                <div class="sidenav_bar m-auto" onclick="openNav()">
+                <div class="menu-show">
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
+                <div class="sidenav_bar" onclick="openNav()">
                     <i class="fa fa-bars" aria-hidden="true"></i>                    
                 </div>
-                <div class="search_box m-auto">
+                <div class="search_box">
                     <form>
                         <input type="text" id="inputSearch" placeholder="Search...">
                         <button type="submit" id="inputSearchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -244,38 +247,37 @@
                         <option value="arb">العربيّة</option>
                     </select>
                     </li>
-                </ul>
-                <ul class="menu-right">
                     <li class="list_option">
-                        <a href="#">
-                            <div class="logged_profil d-flex align-items-center">
-                                <img src="../assets/images/community/header/01.jpg" alt="">
-                                <p class="member_name">Matthew
-                                    <span class="login-status"></span>
-                                </p>
+                        <a href="#" role="button" id="settingDropDown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="logged_profil d-flex align-items-center justify-content-between">
+                                <div class="menu-profile d-flex align-items-center me-3">
+                                    <img src="../assets/images/community/header/01.jpg" alt="">
+                                    <p class="member_name">Matthew
+                                        <span class="login-status"></span>
+                                    </p>
+                                </div>
+                                <div class="menu-profile-icon">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="dropdown-for-setting dropdown-menu" aria-labelledby="settingDropDown">
+                                <div class="profile-name-menu">
+                                    <h5>Matthew Turner</h5>
+                                    <p class="profile-mail">
+                                        <a href="#" >matthew507@gmail.com</a>
+                                    </p>
+                                </div>
+                                <ul class="settings-list">
+                                    <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">My Profile</a></li>
+                                    <li><i class="fa fa-cog" aria-hidden="true"></i><a href="#">Setting</a></li>
+                                    <li><i class="fa fa-user-secret" aria-hidden="true"></i><a href="#">Privecy</a></li>
+                                    <li><i class="fa fa-question-circle" aria-hidden="true"></i><a href="#">Help & Support</a></li>
+                                    <li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="#">Logout</a></li>
+                                </ul>
                             </div>
                         </a>
                     </li>
-                    <li class="list_option setting">
-                        <a href="#" role="button" id="settingDropDown" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
-                        <div class="dropdown-for-setting dropdown-menu" aria-labelledby="settingDropDown">
-                            <div class="profile-name-menu">
-                                <h5>Matthew Turner</h5>
-                                <p class="profile-mail">
-                                    <a href="#" >matthew507@gmail.com</a>
-                                </p>
-                            </div>
-                            <ul class="settings-list">
-                                <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">My Profile</a></li>
-                                <li><i class="fa fa-cog" aria-hidden="true"></i><a href="#">Setting</a></li>
-                                <li><i class="fa fa-user-secret" aria-hidden="true"></i><a href="#">Privecy</a></li>
-                                <li><i class="fa fa-question-circle" aria-hidden="true"></i><a href="#">Help & Support</a></li>
-                                <li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="#">Logout</a></li>
-                            </ul>
-                        </div>
-                    </li>
                 </ul>
-
             </div>
         </div>
         
@@ -578,7 +580,9 @@
                                         <a class="new-comment-img" href="#"><img src="../assets/images/community/home/user-0.jpg" alt="Image"></a>
                                         <div class="new-comment-input">
                                             <input type="text" placeholder="Write a comment....">
-                                            <div class="attached-icon"><i class="fa fa-camera" aria-hidden="true"></i></div>
+                                            <div class="attached-icon">
+                                                <a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -652,7 +656,9 @@
                                         <div class="new-comment-img"><img src="../assets/images/community/home/news-post/comment04.jpg" alt="Image"></div>
                                         <div class="new-comment-input">
                                             <input type="text" placeholder="Write a comment....">
-                                            <div class="attached-icon"><i class="fa fa-camera" aria-hidden="true"></i></div>
+                                            <div class="attached-icon">
+                                                <a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -727,7 +733,9 @@
                                         <div class="new-comment-img"><img src="../assets/images/community/home/news-post/comment04.jpg" alt="Image"></div>
                                         <div class="new-comment-input">
                                             <input type="text" placeholder="Write a comment....">
-                                            <div class="attached-icon"><i class="fa fa-camera" aria-hidden="true"></i></div>
+                                            <div class="attached-icon">
+                                                <a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -856,7 +864,9 @@
                                         <a class="new-comment-img" href="#"><img src="../assets/images/community/home/user-0.jpg" alt="Image"></a>
                                         <div class="new-comment-input">
                                             <input type="text" placeholder="Write a comment....">
-                                            <div class="attached-icon"><i class="fa fa-camera" aria-hidden="true"></i></div>
+                                            <div class="attached-icon">
+                                                <a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>

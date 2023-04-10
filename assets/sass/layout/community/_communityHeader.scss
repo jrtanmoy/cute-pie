@@ -14,10 +14,39 @@
     align-items: center;
     flex-basis: 100%;
     flex-grow: 1;
+    @media (max-width: 991px) {
+        justify-content: flex-end;
+    }
+    .menu-show {
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        line-height: 34px;
+        border-radius: 50%;
+        transition: all .3s ease;
+        display: none;
+        @media (max-width:991px) {
+            display: block;
+        }
+        i {
+            font-size: 20px;
+        }
+        &:hover{
+            background: $theme-color;
+            color: $white;
+        }
+    }
     .sidenav_bar {
+        margin: auto;
         color: $theme-font;
         padding: 20px;
         transition: all .3s ease;
+        @media (max-width: 991px) {
+            margin: 0 10px;
+        }
+        @media (min-width: 1399px) {
+            display: none;
+        }
         &:hover{
             color: $theme-color;
         }
@@ -29,8 +58,13 @@
 .search_box {
     width: 430px;
     position: relative;
+    margin: auto;
     @media (max-width: 1200px) {
         max-width: 300px;
+    }
+    @media (max-width: 991px) {
+        display: none;
+        margin: 0 10px;
     }
     input {
         display: block;
@@ -61,9 +95,29 @@
         height: 50px;
     }
 }
+.menu_list.main {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
 .menu_list, .menu-right {
     display: flex;
     align-items: center;
+    @media (max-width: 991px) {
+        padding: 10px 20px;
+        flex-direction: column;
+        position: absolute;
+        background: #faeee2;
+        row-gap: 10px;
+        top: 103%;
+        right: 1%;
+        border-radius: 10px;
+        transition: all .4s ease;
+        transform-origin: top;
+        transform: translateY(1);
+        visibility: hidden;
+        opacity: 0;
+    }
     .list_option {
         margin-left: 25px;
         position: relative;
@@ -150,6 +204,12 @@
     inset: 62px 0px 0 auto !important;
     transform: none !important;
     padding: 0;
+    @media (max-width: 991px) {
+        inset: 18px 25px 0 auto !important;
+    }
+    @media (max-width: 576px) {
+        width: 242px;
+    }
     .dropdown-title {
         justify-content: space-between;
         padding: 10px 15px;
@@ -157,6 +217,9 @@
             font-size: 18px;
             font-weight: 600;
             color: $theme-color;
+            @media (max-width: 576px) {
+                font-size: 15px;
+            }
         }
         .title-option {
             border: none;
@@ -183,6 +246,9 @@
                     img {
                         max-width: 55px;
                         border-radius: 50%;
+                        @media (max-width: 576px) {
+                            max-width: 35px;
+                        }
                     }
                 }
             }
@@ -192,6 +258,10 @@
                     font-weight: 600;
                     color: $theme-font;
                     transition: all .3s ease;
+                    @media (max-width: 576px) {
+                        font-size: 13px;
+                        font-weight: 400;
+                    }
                     &:hover {
                         color: $theme-color;
                     }
@@ -200,6 +270,10 @@
                     margin-top: 5px;
                     color: #6B7C8F;
                     font-size: 14px;
+                    @media (max-width: 576px) {
+                        font-size: 12px;
+                        margin-top: 3px;
+                    }
                 }
                 .notify-time {
                     color: blue;
@@ -223,6 +297,11 @@
                     color: $theme-font;
                     transition: all .3s ease;
                     background: transparent;
+                    @media (max-width: 576px) {
+                        height: 20px;
+                        width: 20px;
+                        line-height: 20px;
+                    }
                     &:hover{
                         background: $theme-color;
                         color: $white;
@@ -231,6 +310,9 @@
                     i {
                         font-size: 14px;
                         line-height: 1px;
+                        @media (max-width: 576px) {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -268,6 +350,9 @@
     max-height: 280px;
     max-width: 200px;
     border: none !important;
+    @media (max-width: 991px) {
+        inset: 15px 161px 0px auto !important;
+    }
     .profile-name-menu {
         margin-bottom: 5px;
         h5 {
