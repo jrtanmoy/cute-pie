@@ -15,6 +15,9 @@
 @import "components/select";
 @import "components/checkbox";
 @import "components/range";
+@import "components/accordion";
+@import "components/form";
+@import "components/form-check";
 
 @import "layout/ecommarce_header-joy";
 @import "layout/hero-slider";
@@ -23,10 +26,13 @@
 
 // for community
 @import "layout/community/communityHeader";
+@import "layout/community/communitySideNav";
+@import "layout/community/communityFooter";
 
 @import "components/community/communityBtn";
 
 @import "pages/community/communityHome";
+@import "pages/community/myProfile";
 
 
 
@@ -35,6 +41,7 @@
 @import "pages/_ecommarce/ecommarce_home";
 @import "pages/_ecommarce/ecommarce_shopPage";
 @import "pages/_ecommarce/ecommarce_shop_item-details";
+@import "pages/_ecommarce/ecommarce_cart";
 
 
 

@@ -7,3 +7,7 @@
     border: none;
     width: auto;
 }
+.rating-custom-select:focus{
+    border-color: $theme-font;
+    box-shadow: none;
+}
