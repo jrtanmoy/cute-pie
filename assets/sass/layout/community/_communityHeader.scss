@@ -41,6 +41,7 @@
         color: $theme-font;
         padding: 20px;
         transition: all .3s ease;
+        cursor: pointer;
         @media (max-width: 991px) {
             margin: 0 10px;
         }

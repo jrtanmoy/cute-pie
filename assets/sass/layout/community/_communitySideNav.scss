@@ -76,7 +76,8 @@
                 .side-icon {
                     svg {
                         path {
-                            color: $theme-color;
+                            stroke: $theme-color;
+                            fill: $theme-color;
                         }
                     }
                     &::before{
@@ -90,7 +91,7 @@
             .side-icon {
                 svg {
                     path {
-                        color: $theme-color;
+                        fill: $theme-color;
                     }
                 }
                 &::before{
