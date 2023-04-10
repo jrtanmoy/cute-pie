@@ -1,12 +1,21 @@
 .all-content {
-    padding: 0 175px;
+    padding: 100px 190px;
     background: #F4F7FC;
     min-height: 100vh;
+    position: relative;
     @media (max-width: 1400px) {
-        padding: 0;
+        padding: 100px 0;
+    }
+    @media (max-width: 992px) and (min-width:768px) {
+        padding-right: 190px;
     }
 }
 // left sidet start 
+.news-feed-left {
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
 .left-widget {
     background: $white;
     box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
@@ -17,6 +26,7 @@
 .news-feed-content {
     padding: 10px 10px;
 }
+
 .view-profile {
     .profile-cover {
         margin: -20px;
@@ -51,11 +61,17 @@
                 font-weight: 600;
                 display: block;
                 margin-top: 10px;
+                @media (max-width: 1200px) {
+                    font-size: 16px;
+                }
             }
         }
         .locaiton {
             font-size: 15px;
             color: #6B7C8F;
+            @media (max-width: 1200px) {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -73,10 +89,16 @@
                 font-size: 15px;
                 font-weight: 600;
                 color: $theme-font;
+                @media (max-width: 1200px) {
+                    font-size: 13px;
+                }
             }
             .statics-name {
                 font-size: 12px;
                 color: #6B7C8F;
+                @media (max-width: 1200px) {
+                    font-size: 11px;
+                }
             }
         }
         &::after{
@@ -106,7 +128,10 @@
     .recent-likes-person {
         display: flex;
         justify-content: center;
-        margin: 15px 0;
+        margin: 15px;
+        @media (max-width: 1200px) and (min-width:991px) {
+            margin: 15px 15px 15px 0;
+        }
         li {
             margin-right: -10px;
             >a{
@@ -114,6 +139,9 @@
                     max-width: 45px;
                     border-radius: 50%;
                     border: 2px solid $white;
+                    @media (max-width: 1200px) {
+                        max-width: 40px;
+                    }
                 }
             }
             @media (max-width:1480px) and (min-width: 1400px){
@@ -131,8 +159,13 @@
     justify-content: space-between;
     margin-bottom: 20px;
     h5 {
-        font-size: 16px;
+        font-size: 15px;
         color: $theme-font;
+    }
+    a {
+        font-size: 13px;
+        text-decoration: underline;
+        color: $theme-color;
     }
 }
 .like-items {
@@ -159,6 +192,9 @@
                 color: $theme-font;
                 transition: all .3s ease;
                 font-weight: 600;
+                @media (max-width: 1100px) and (min-width: 991px) {
+                    font-size: 13px;
+                }
                 &:hover{
                     color: $theme-color;
                 }
@@ -168,6 +204,9 @@
                 color: #9c9c9c;
                 display: block;
                 margin-top: 5px;
+                @media (max-width: 1100px) and (min-width: 991px) {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -225,6 +264,10 @@
                     width: 20px;
                     display: inline-block;
                     margin-right: 5px;
+                    @media (max-width:425px) {
+                        display: block;
+                        margin: auto;
+                    }
                 }
                 .photo-icon {
                     svg {
@@ -257,6 +300,9 @@
                 &:hover {
                     color: $theme-color;
                 }
+                @media (max-width: 425px) {
+                    font-size: 10px;
+                }
             }
         }
     }
@@ -270,6 +316,9 @@
                 img {
                     max-width: 80px;
                     border-radius: 50%;
+                    @media (max-width:425px) {
+                        max-width: 50px;
+                    }
                 }
             }
             .athore-info {
@@ -345,11 +394,17 @@
     }
 }
 .post-body {
-    p {
+    .post-status {
         font-size: 14px;
         color: #091727;
         line-height: 24px;
         margin-bottom: 20px;
+        @media (max-width:576px) {
+            font-size: 12px;
+        }
+        .icons {
+            color: red;
+        }
     }
     .post-img {
         img {
@@ -373,11 +428,17 @@
             img {
                 max-width: 60px;
                 border-radius: 50%;
+                @media (max-width:576px) {
+                    max-width: 55px;                    
+                }
             }
         }
         .new-comment-input {
             padding-left: 85px;
             position: relative;
+            @media (max-width:576px) {
+                padding-left: 65px;
+            }
             input {
                 height: 60px;
                 font-size: 13px;
@@ -413,6 +474,10 @@
                 display: inline-block;
                 width: 20px;
                 margin-right: 5px;
+                @media (max-width: 1100px) and (min-width: 991px) {
+                    width: 18px;
+                    margin-right: 3px;
+                }
                 svg {
                     path {
                         fill: $theme-color;
@@ -422,6 +487,15 @@
             span {
                 font-size: 15px;
                 color: $theme-font;
+                @media (max-width: 1100px) and (min-width: 991px) {
+                    font-size: 12px;
+                }
+                @media (max-width:768px) {
+                    font-size: 14px;
+                }
+                @media (max-width:425px) {
+                    font-size: 12px;
+                }
             }
             .react-name {
                 transition: all .3s ease;
@@ -433,6 +507,15 @@
                 padding-left: 15px;
                 margin-left: 10px;
                 border-left: 1px solid #eeeeee;
+                @media (max-width: 516px) {
+                    padding-left: 2px;
+                    margin-left: 2px;
+                    border-left: none;
+                }
+                @media (max-width: 480px) {
+                    display: block;
+                    margin-left: 25px;
+                }
             }
         }
     }
@@ -447,7 +530,7 @@
             border-radius: 30px;
             position: absolute;
             left: 0;
-            top: -270%;
+            top: -260%;
             right: -100%;
             visibility: hidden;
             opacity: 0;
@@ -476,8 +559,6 @@
         }
     } 
 }
-
-
 .post-comment-list {
     padding-top: 25px;
     .single-comment {
@@ -492,11 +573,17 @@
                 img {
                     max-width: 70px;
                     border-radius: 50%;
+                    @media (max-width: 576px) {
+                        max-width: 40px;
+                    }
                 }
             }
         }
         .comment-details {
             padding-left: 85px;
+            @media (max-width: 576px) {
+                padding-left: 60px;
+            }
             .coment-info {
                 h6 {
                     a {
@@ -542,3 +629,146 @@
         }
     }
 }
+.load-more {
+    text-align: center;
+    a {
+        color: $theme-color;
+        font-size: 16px;
+        .loading-icon {
+            width: 30px;
+            margin-right: 10px;
+            svg {
+                width: 20px;
+                path {
+                    fill: $theme-color;
+                }
+            }
+        }
+    }
+}
+// right side 
+.news-feed-right {
+    @media (max-width: 991px) {
+        display: none;
+    }
+    .weather-img {
+        margin-bottom: 25px;
+        a {
+            display: block;
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.right-widget {
+    padding: 15px;
+    .like-items {
+        overflow: hidden;
+        .right-wdget-img {
+            a {
+                img {
+                    max-width: 45px;
+                    max-height: 45px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .follower-title {
+        display: flex;
+        align-items: center;
+        a {
+            width: 120px;
+            display: block;
+        }
+        .following-add {
+            font-size: 12px;
+            color: $theme-color;
+            display: block;
+        }
+    }
+}
+
+// live chat and contact section start 
+.contact-wrap {
+    background: #fff;
+    padding: 5px;
+    width: 190px;
+    position: fixed;
+    top: 110px;
+    right: 0;
+    border-radius: 5px;
+    overflow-y: auto;
+    height: 100vh;
+    @media (max-width:1400px) and (min-width:992px) {
+        display: none;
+    }
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.live-chat {
+    background: $white;
+    padding: 15px;
+    max-height: 250px;
+}
+.contact-widget {
+    max-height: 200px;
+    overflow-y: auto;
+    li {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        margin-bottom: 20px;
+        .contact-img{
+            position: relative;
+            margin-right: 10px;
+            a {
+                img {
+                    max-width: 45px;
+                    max-height: 45px;
+                    border-radius: 50%;
+                }
+            }
+            .login-status {
+                position: absolute;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                top: 3px;
+                right: 2px;
+            }
+            .online {
+                background: $theme-color;
+            }
+            .offline {
+                background: #9c9c9c;
+            }
+        }
+        .contact-name{
+            a {
+                font-size: 14px;
+                color: $theme-font;
+                display: inline-block;
+                transition: all .3s ease;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+.live-contact {
+    max-height: 450px;
+    .contact-widget {
+        max-height: 300px;
+    }
+}
+.contact-search {
+    padding: 0;
+    #smsSearchBtn{
+        right: 10px;
+    }
+}
+

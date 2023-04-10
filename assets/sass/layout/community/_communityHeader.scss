@@ -1,6 +1,9 @@
 .community-header-area {
     padding: 15px;
-    background: $primary-bg;
+    background: #fffaf5;
+    position: fixed;
+    width: 100%;
+    z-index: 111;
 }
 .main-header {
     display: flex;
@@ -58,7 +61,7 @@
         height: 50px;
     }
 }
-.menu_list {
+.menu_list, .menu-right {
     display: flex;
     align-items: center;
     .list_option {
@@ -131,6 +134,11 @@
         }
     }
 }
+.menu_list {
+    @media (max-width: 1300px) {
+        // display: none;
+    }
+}
 .dropdown-option, .dropdown-menu {
     position: absolute !important;
     width: 320px;
@@ -159,31 +167,6 @@
             &:hover{
                 color: $theme-color;
             }
-        }
-    }
-    .sms-search {
-        padding: 0px 15px;
-        position: relative;
-        margin-bottom: 20px;
-        #smsSearch{
-            height: 40px;
-            width: 100%;
-            border: none;
-            outline: none;
-            border-radius: 30px;
-            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-            padding: 0 20px;
-            font-size: 14px
-            ;
-        }
-        #smsSearchBtn {
-            height: 40px;
-            border: none;
-            outline: none;
-            position: absolute;
-            top: 0;
-            right: 30px;
-            background: transparent;
         }
     }
     .dropdown-content {
@@ -254,16 +237,45 @@
         }
     }
 }
+
+.sms-search {
+    padding: 0px 15px;
+    position: relative;
+    margin-bottom: 20px;
+    #smsSearch{
+        height: 40px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 0 20px;
+        font-size: 14px
+        ;
+    }
+    #smsSearchBtn {
+        height: 40px;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0;
+        right: 30px;
+        background: transparent;
+    }
+}
 .dropdown-for-setting {
     padding: 10px 15px;
     max-height: 280px;
     max-width: 200px;
     border: none !important;
-    .profile-name {
+    .profile-name-menu {
         margin-bottom: 5px;
         h5 {
             font-size: 16px;
             color: $theme-font;
+            @media (max-width:1200px) {
+                font-size: 15px;
+            }
         }
         .profile-mail{
             display: block;
@@ -352,7 +364,7 @@
         position: absolute;
         width: 10px;
         height: 10px;
-        background: #1DD217;
+        background: $theme-color;
         border-radius: 50%;
         top: 2px;
         left: 30px;
