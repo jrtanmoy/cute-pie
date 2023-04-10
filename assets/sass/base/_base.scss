@@ -80,8 +80,14 @@ img{
 .p-left-14{
     padding-left: 14px;
 }
+.p-left-20{
+    padding-left: 20px;
+}
 .theme-color{
     color: $theme-color;
+}
+.primary-bg{
+    background-color: $primary-bg;
 }
 .common-a{
     color: $theme-font;
@@ -134,4 +140,8 @@ img{
         transition-delay: 1s;
         visibility: visible;
     }
+}
+
+.custom-border-bottom{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }

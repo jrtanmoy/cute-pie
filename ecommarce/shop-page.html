@@ -72,8 +72,8 @@
                                             <span>Pet pharmacy</span>
                                             <a class="custom-collapse" data-bs-toggle="collapse" href="#PetPharmacy"
                                                 role="button" aria-expanded="false" aria-controls="PetPharmacy">
-                                                <i class="fa fa-angle-right collapse-right"></i>
-                                                <i class="fa fa-angle-down collapse-down"></i>
+                                                <i class="fa fa-angle-right"></i>
+                                                <i class="fa fa-angle-down d-none"></i>
                                             </a>
                                         </div>
                                     </a>
@@ -99,8 +99,8 @@
                                             <span>Toys & accessories</span>
                                             <a class="custom-collapse" data-bs-toggle="collapse" href="#toysAccessories"
                                                 role="button" aria-expanded="false" aria-controls="toysAccessories">
-                                                <i class="fa fa-angle-right collapse-right"></i>
-                                                <i class="fa fa-angle-down collapse-down"></i>
+                                                <i class="fa fa-angle-right"></i>
+                                                <i class="fa fa-angle-down d-none "></i>
                                             </a>
                                         </div>
                                     </a>
@@ -1195,6 +1195,11 @@
             $('.shop-left').toggleClass('active')
             $('.backdrop').hide()
         }
+
+        $(".custom-collapse").on("click", function () {
+            $(this).children('.fa-angle-right').toggleClass("d-none");
+            $(this).children('.fa-angle-down').toggleClass("d-none");
+        });
     </script>
 </body>
 

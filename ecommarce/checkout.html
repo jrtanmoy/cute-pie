@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Home</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap-select.min.css"> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="/assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
+    <link rel="stylesheet" href="/assets/sass/style.css">
+
+
+
+</head>
+
+<body>
+    <div class="backdrop" onclick="closeBackdrop()"></div>
+    <!-- camp link start -->
+    <div class="camp-link">
+        <div class="container">
+            <ul class="breadcumb">
+                <li>
+                    <a href="#">Home</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>Checkout</li>
+            </ul>
+        </div>
+    </div>
+    <!-- camp link end -->
+    <!-- shop card section start-->
+    <section class="checkout-details-content">
+        <div class="container">
+            <h2 class="section-title">Checkout</h2>
+            <p class="f-14">Have a coupon?
+                <a href="#" class="f-14 link-theme-color"> Click here to enter your code
+                </a>
+            </p>
+            <form action="" class="ptop-40">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="billing-details">
+                            <h3 class="section-subtitle">Billing details</h3>
+                            <div class="mb-3">
+                                <label for="first-name" class="form-label f-14">First name *</label>
+                                <input type="text" class="form-control f-14" id="first-name" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="last-name" class="form-label f-14">Last name *</label>
+                                <input type="text" class="form-control f-14" id="last-name" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="company-name" class="form-label f-14">Company name (optional)</label>
+                                <input type="text" class="form-control f-14" id="company-name" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="select-country" class="form-label f-14">Country / Region *</label>
+                                <select id="select-country" class="form-select rating-custom-select f-14"
+                                    aria-label="Default select example">
+                                    <option selected>Bangladesh</option>
+                                    <option value="1">AAA</option>
+                                    <option value="2">BBB</option>
+                                    <option value="3">DDD</option>
+                                    <option value="4">FFF</option>
+                                    <option value="5">EEE</option>
+                                </select>
+                                <!-- <select  id="select-country"  class="selectpicker countrypicker " data-live-search="true"
+                                data-default="United States">
+                                </select> -->
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="street-name" class="form-label f-14">Street address *</label>
+                                <input type="text" class="form-control f-14" id="street-name"
+                                    placeholder="House number and street name">
+                                <input type="text" class="form-control f-14 mt-3" id="street-name"
+                                    placeholder="Apartment, suite, unit, etc. (optional)">
+                            </div>
+                            <div class="mb-3">
+                                <label for="town-name" class="form-label f-14">Town / City *</label>
+                                <input type="text" class="form-control f-14" id="town-name" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="select-state" class="form-label f-14">State *</label>
+                                <select id="select-state" class="form-select rating-custom-select f-14"
+                                    aria-label="Default select example">
+                                    <option selected>Khulna</option>
+                                    <option value="1">AAA</option>
+                                    <option value="2">BBB</option>
+                                    <option value="3">DDD</option>
+                                    <option value="4">FFF</option>
+                                    <option value="5">EEE</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="zip-code" class="form-label f-14">ZIP Code *</label>
+                                <input type="text" class="form-control f-14" id="zip-code" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label f-14">Phone *</label>
+                                <input type="text" class="form-control f-14" id="phone" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label f-14">Email address *</label>
+                                <input type="email" class="form-control f-14" id="email" placeholder="">
+                            </div>
+                            <h3 class="section-subtitle">Additional information</h3>
+                            <div class="mb-3">
+                                <label for="notes" class="form-label f-14">Order notes (optional)</label>
+                                <textarea class="form-control f-14 pt-3" id="notes" rows="5"
+                                    placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="section-subtitle">Your order</h3>
+                        <table class="checkout-table">
+                            <tr class="checkout-table-head">
+                                <th class="f-16-title">Product</th>
+                                <th class="f-16-title">Subtotal</th>
+                            </tr>
+                            <tr class="checkout-table-data">
+                                <td class="">
+                                    <div>
+                                        <p class="f-14">
+                                            Bootique Pumpkin Bowl for Dogs & Cats, 3 Cups <span class="f-14 fw-bold">×
+                                                1</span>
+                                        </p>
+                                    </div>
+                                </td>
+
+                                <td class="">
+                                    <div>
+                                        <p class="fw-500 f-15">$12.99</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="checkout-table-data">
+                                <td class="">
+                                    <div>
+                                        <p class="f-14">
+                                            Club Nine Pets Charcoal Metro Orthopedic Dog Bed <span
+                                                class="f-14 fw-bold">× 1</span>
+                                        </p>
+                                    </div>
+                                </td>
+
+                                <td class="">
+                                    <div>
+                                        <p class="f-15">$12.99</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="checkout-table-data">
+                                <td class="">
+                                    <div>
+                                        <p class="f-16-title">Subtotal</p>
+                                    </div>
+                                </td>
+
+                                <td class="">
+                                    <div>
+                                        <p class="f-15">$222.98</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="checkout-table-data">
+                                <td class="">
+                                    <div>
+                                        <p class="f-16-title">Total</p>
+                                    </div>
+                                </td>
+
+                                <td class="">
+                                    <div>
+                                        <p class="f-15 fw-bold">$222.98</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="payment-methods">
+                            <ul class="payment-methods-list">
+                                <li class="custom-border-bottom payment-methods-list-content">
+                                    <a class="d-flex align-items-center payment-radio-btn">
+                                        <input id="bank-method" type="radio" class="input-radio me-2 "
+                                            name="payment_method" value="bank" checked="checked">
+                                        <label for="bank-method" class="f-15">
+                                            Direct bank transfer
+                                        </label>
+                                    </a>
+                                    <div class="payment-method-box payment-d-block">
+                                        <p class="f-13">Make your payment directly into our bank account. Please use
+                                            your Order ID as
+                                            the payment reference. Your order will not be shipped until the funds have
+                                            cleared in our account.</p>
+                                    </div>
+                                </li>
+                                <li class="custom-border-bottom payment-methods-list-content">
+                                    <a class="d-flex align-items-center payment-radio-btn">
+                                        <input id="check-method" type="radio" class="input-radio me-2"
+                                            name="payment_method" value="check">
+                                        <label for="check-method" class="f-15">
+                                            Check payments
+                                        </label>
+                                    </a>
+                                    <div class="payment-method-box payment-d-none">
+                                        <p class="f-13">Please send a check to Store Name, Store Street, Store Town,
+                                            Store State /
+                                            County, Store Postcode.</p>
+                                    </div>
+                                </li>
+                                <li class="custom-border-bottom payment-methods-list-content">
+                                    <a class="d-flex align-items-center payment-radio-btn">
+                                        <input id="cod-method" type="radio" class="input-radio me-2"
+                                            name="payment_method" value="cod">
+                                        <label for="cod-method" class="f-15">
+                                            Cash on delivery
+                                        </label>
+                                    </a>
+                                    <div class="payment-method-box payment-d-none">
+                                        <p class="f-13">Pay with cash upon delivery.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="f-14 ptop-25">Your personal data will be used to process your order, support your
+                            experience throughout this website, and for other purposes described in our <a href="#"
+                                class="link-theme-color">privacy policy.</a></p>
+                        <button type="submit" class="common-button mt-4">Place order</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <!-- <script src="/assets/js/countrypicker.js"></script> -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bootstrap-select.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="/assets/js/odometer.js"></script>
+    <script src="/assets/js/slick-slider.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script>
+        // $('input[name="payment_method"]').on('click', function () {
+        //     var radioValue = $('input[name="payment_method"]:checked').val();
+        //     // console.log(radioValue,radioValue.val());
+        // });
+        $(".payment-methods-list li a input").on("click", function () {
+            $('.payment-method-box').addClass("payment-d-none");
+            $('.payment-method-box').removeClass("payment-d-block");
+            // $(this).parent().siblings('.payment-method-box').css({
+            //     transition: 'all 1s ease-in-out'
+            // });
+            $(this).parent().siblings('.payment-method-box').removeClass("payment-d-none");
+            $(this).parent().siblings('.payment-method-box').addClass("payment-d-block");
+            
+        });
+    </script>
+
+</body>
+
+</html>
