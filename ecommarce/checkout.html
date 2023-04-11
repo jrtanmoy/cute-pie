@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Home</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <title>CUTEPIE</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="/assets/css/bootstrap-select.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/select2.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
-    <link rel="stylesheet" href="/assets/css/odometer-theme-default.css">
-    <link rel="stylesheet" href="/assets/css/slick.css">
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/default.css">
-    <link rel="stylesheet" href="/assets/sass/style.css">
+    <link rel="stylesheet" href="../assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/sass/style.css">
 
 
 
@@ -66,18 +67,15 @@
                             </div>
                             <div class="mb-3">
                                 <label for="select-country" class="form-label f-14">Country / Region *</label>
-                                <select id="select-country" class="form-select rating-custom-select f-14"
-                                    aria-label="Default select example">
-                                    <option selected>Bangladesh</option>
+                                <select  id="select-country"  class="js-example-basic-single form-select rating-custom-select f-14" name="country" >
+                                    <option value="ban">Bangladesh</option>
                                     <option value="1">AAA</option>
                                     <option value="2">BBB</option>
                                     <option value="3">DDD</option>
                                     <option value="4">FFF</option>
                                     <option value="5">EEE</option>
+                                    <option value="WY">Wyoming</option>
                                 </select>
-                                <!-- <select  id="select-country"  class="selectpicker countrypicker " data-live-search="true"
-                                data-default="United States">
-                                </select> -->
 
                             </div>
                             <div class="mb-3">
@@ -93,14 +91,14 @@
                             </div>
                             <div class="mb-3">
                                 <label for="select-state" class="form-label f-14">State *</label>
-                                <select id="select-state" class="form-select rating-custom-select f-14"
-                                    aria-label="Default select example">
-                                    <option selected>Khulna</option>
+                                <select  id="select-state"  class="js-example-basic-single form-select rating-custom-select f-14" name="country" >
+                                    <option value="ban">Khulna</option>
                                     <option value="1">AAA</option>
                                     <option value="2">BBB</option>
                                     <option value="3">DDD</option>
                                     <option value="4">FFF</option>
                                     <option value="5">EEE</option>
+                                    <option value="WY">Wyoming</option>
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -244,17 +242,21 @@
         </div>
     </section>
 
-    <script src="/assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
     <!-- <script src="/assets/js/countrypicker.js"></script> -->
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/bootstrap-select.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
 
+    <script src="../assets/js/odometer.js"></script>
+    <script src="../assets/js/slick-slider.js"></script>
+    <script src="../assets/js/script.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
-    <script src="/assets/js/odometer.js"></script>
-    <script src="/assets/js/slick-slider.js"></script>
-    <script src="/assets/js/script.js"></script>
     <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
         // $('input[name="payment_method"]').on('click', function () {
         //     var radioValue = $('input[name="payment_method"]:checked').val();
         //     // console.log(radioValue,radioValue.val());
@@ -267,7 +269,6 @@
             // });
             $(this).parent().siblings('.payment-method-box').removeClass("payment-d-none");
             $(this).parent().siblings('.payment-method-box').addClass("payment-d-block");
-            
         });
     </script>
 
