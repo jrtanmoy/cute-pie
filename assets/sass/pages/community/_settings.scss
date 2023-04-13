@@ -7,6 +7,12 @@
         font-size: 35px;
         color: $white;
         font-weight: 600;
+        @media (max-width:991px) {
+            font-size: 30px;
+        }
+        @media (max-width:576px) {
+            font-size: 25px;
+        }
     }
 }
 .setting-tab-btn {
@@ -65,6 +71,9 @@
     padding: 45px;
     background: $white;
     margin: 20px 0 30px 0;
+    @media (max-width: 576px) {
+        padding: 25px;
+    }
     label{
         font-size: 14px;
         color: #6B7C8F;
@@ -161,6 +170,9 @@
             margin-bottom: 10px;
             &:last-child{
                 margin-bottom: 0;
+            }
+            @media (max-width:425px) {
+                font-size: 13px;
             }
         }
     }
@@ -534,4 +546,109 @@
         border-top: 2px solid black;
     }
 }
-// 
+
+// Birthday Page start 
+.birthday-widget { 
+    .single-wish {
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .page-title {
+        width: 100%;
+        .date {
+            margin: 5px 0 15px 0;
+        }
+        .birthday-wish {
+            padding-right: 100px;
+            position: relative;
+            .emoji-btn {
+                font-size: 16px;
+                color: $theme-font;
+                position: absolute;
+                top: 0;
+                left: 0px;
+                padding: 0 10px;
+                height: 50px;
+                border: none;
+                outline: none;
+                background: transparent;
+            }
+            input {
+                width: 100%;
+                height: 50px;
+                background: #f4f7fc;
+                font-size: 14px;
+                color: #6b7c8f;
+                padding: 10px 35px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                font-weight: 400;
+                transition: all .3s ease;
+            }
+            .wish-send-btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.like-items {
+    .right-wdget-img {
+    a {
+        img {
+        max-width: 45px;
+        max-height: 45px;
+        border-radius: 50%;
+    }
+}
+    } 
+}
+.single-info {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 25px;
+    .page-img {
+        >a {
+            img {
+                max-width: 55px;
+                max-height: 55px;
+                border-radius: 50%;                    
+            }
+        }
+    }
+    .page-title {
+        >a {
+            font-size: 15px;
+            color: $theme-font;
+            transition: all .3s ease;
+            font-weight: 600;
+            @media (max-width: 1100px) and (min-width: 991px) {
+                font-size: 13px;
+            }
+            &:hover{
+                color: $theme-color;
+            }
+        }
+        span {
+            font-size: 14px;
+            color: #9c9c9c;
+            display: block;
+            margin-top: 5px;
+            @media (max-width: 1100px) and (min-width: 991px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+.upcoming-birthday-wrap {
+    margin: 20px 0;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
