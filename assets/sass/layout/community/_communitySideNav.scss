@@ -6,7 +6,7 @@
 }
 .community-sidenav {
     height: 100%;
-    width: 0;
+    width: 180px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -16,17 +16,22 @@
     transition: 0.5s;
     margin-top: 107px;
     padding-bottom: 110px;
-    // @media (min-width:1399px) {
-    //     width: 180px;
-    // }
+    @media (max-width:1399px) {
+        width: 0;
+    }
 }
-  .sidenav .closebtn {
+.community-sidenav.main{
+    width: 180px;
+}
+
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
+  }
+
 .sidebar-list {
     padding: 10px;
     .single-side {
@@ -71,7 +76,8 @@
                 .side-icon {
                     svg {
                         path {
-                            color: $theme-color;
+                            stroke: $theme-color;
+                            fill: $theme-color;
                         }
                     }
                     &::before{
@@ -85,7 +91,7 @@
             .side-icon {
                 svg {
                     path {
-                        color: $theme-color;
+                        fill: $theme-color;
                     }
                 }
                 &::before{
@@ -95,3 +101,9 @@
         }
     }
 }
+// .communityClosebtn {
+//     position: absolute;
+//     top: 200px;
+//     right: 190px;
+//     font-size: 36px;
+// }
