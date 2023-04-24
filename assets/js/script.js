@@ -1,3 +1,14 @@
+//main header
+$(".left-content-list li a").on("click", function () {
+  $(".left-content-list li a").removeClass("main-menu-active");
+  $(this).addClass("main-menu-active");
+}); 
+
+//gallery header
+$(".gallery-menu-list li a").on("click", function () {
+  $(".gallery-menu-list li a").removeClass("gallery-menu-active");
+  $(this).addClass("gallery-menu-active");
+}); 
 
 // header top remove
 $('.close').on('click', function(){
