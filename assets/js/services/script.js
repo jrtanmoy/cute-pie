@@ -20,11 +20,11 @@ $('.featured-service-active').slick({
     prevArrow: "<button class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
+          // infinite: true,
           dots: false
         }
       },
@@ -60,18 +60,9 @@ $('.service-testimoni-active').slick({
   prevArrow: "<button class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
   responsive: [
     {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 2
       }
     },
@@ -118,7 +109,39 @@ $('.service-gallary-active').slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+//Related service active
+$('.related-service-active').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: false,
+  // autoplaySpeed: 1000,
+  arrows: true,
+  dots: false,
+  nextArrow: "<button class='slick-prev pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  prevArrow: "<button class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  responsive: [
+
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
       }
     },
     {
@@ -133,10 +156,11 @@ $('.service-gallary-active').slick({
     // instead of a settings object
   ]
 });
+$(".play-icon").modalVideo();
 
-//Related service active
-$('.related-service-active').slick({
-  slidesToShow: 2,
+
+$('.').slick({
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: false,
   // autoplaySpeed: 1000,
@@ -172,4 +196,15 @@ $('.related-service-active').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
+});
+$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
 });

@@ -1,16 +1,30 @@
 .service-section-title {
     margin-bottom: 50px;
+    @media (max-width:991px) {
+        margin-bottom: 40px;
+    }
+    @media (max-width:768px) {
+        margin-bottom: 50px;
+    }
     h5 {
         font-size: 40px;
         line-height: 50px;
         color: $theme-font;
         margin-bottom: 10px;
         font-weight: 600;
+        @media (max-width:991px) {
+            font-size: 34px;
+        }
+        @media (max-width:576px) {
+            font-size: 25px;
+        }
     }
     p {
         font-size: 20px;
         color: #74788D;
-
+        @media (max-width:991px) {
+            font-size: 16px;
+        }
     }
 }
 .features-service {
@@ -25,7 +39,7 @@
 }
 .featured-service-active {
     .slick-slide {
-        margin: 0 10px;
+        padding: 0 10px;
     }
     .slick-arrow {
         position: absolute;
@@ -41,6 +55,9 @@
         border: 1px solid #717171;
         outline: none;
         transition: all .3s ease;
+        @media (max-width: 768px) {
+            top: -40px;
+        }
         &:hover{
             background: $theme-color;
             color: $white;
@@ -49,6 +66,9 @@
     }
     .pull-left {
         right: 50px;
+    }
+    .slick-list{
+        margin: 0 -10px;
     }
 }
 .single-featurs-service {
@@ -122,6 +142,7 @@
             }
             .service-price {
                 border: 1px solid #DDDDDD;
+                margin-bottom: 0;
             }
         }
         .features-service-category {
@@ -177,6 +198,16 @@
                 }
             }
         }
+    }
+}
+.service-ranking-start {
+    li {
+        align-items: center;
+        @media (max-width:1200px) {            
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+        }        
     }
 }
 
