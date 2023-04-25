@@ -22,18 +22,59 @@
     <!-- Dashboard header start -->
     <div class="dashboard-header">
         <div class="dashboard-logo">
+            <div class="dasboard-menuber" onclick="openDashboardNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="myDashboardSidenav" class="dashboard-sidenav-small">
+                <a href="javascript:void(0)" class="dashborard-sidenav-closebtn" onclick="closeDashboardNav()">&times;</a>
+                <ul class="dashboard-sidenav-list">
+                    <li>
+                        <a href="./dashboard-personal-profile.html">
+                            <i class="fa fa-user"></i>
+                            Personal Profile Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit Profile Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dashboard-all-photo">
+                            <i class="fa fa-picture-o"></i>
+                            All Photos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dashboard-all-video">
+                            <i class="fa fa-file-video-o"></i>
+                            All Videos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-key"></i>
+                            Change Password
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <img src="../assets/images/logo.png" alt="logo">
         </div>
         <div class="dashboard-header-right">
-            <a href="#" class="common-button">Add A Post</a>
+            <a href="#" class="common-button d-none d-lg-block">Add A Post</a>
             <div class="d-flex align-items-center dashboard-header-profile">
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-plus d-lg-none"></i>
+                <i class="fa fa-home"></i>
                 <img class="dashboard-top-part-img me-2" src="../assets/images/gallery/profile/profile-img.jpg"
                     alt="profile image">
                 <div class="dropdown">
                     <button class="dropdown-toggle add-file-custom-dropdown" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Alfred Nobel
+                        <span class="d-none d-md-inline-block">Alfred Nobel</span>
                     </button>
                     <ul class="dropdown-menu add-file-custom-dropdown-menu">
                         <li><a class="dropdown-item f-16" href="#">Profile</a></li>
