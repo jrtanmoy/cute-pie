@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUTEPIE</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
+
+    <script src="../assets/js/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <!-- camp link start -->
+    <div class="camp-link">
+        <div class="container">
+            <ul class="breadcumb">
+                <li>
+                    <a href="#">Home</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#">Channel</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>Profile Information</li>
+            </ul>
+        </div>
+    </div>
+    <!-- camp link end -->
+    <!-- file upload form start -->
+    <div class="file-upload py-5">
+        <div class="container">
+            <div class="file-upload-contentpy-5">
+                <div class="file-upload-top-part">
+                    <h2 class="section-stitle">Profile Information</h2>
+                    <div class="d-flex align-items-center">
+                        <img class="file-upload-top-part-img me-2" src="../assets/images/gallery/profile/profile-img.jpg" alt="profile image">
+                        <div class="dropdown">
+                            <button class="dropdown-toggle add-file-custom-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Alfred Nobel 
+                            </button>
+                            <ul class="dropdown-menu add-file-custom-dropdown-menu">
+                              <li><a class="dropdown-item f-16" href="#">Action</a></li>
+                              <li><a class="dropdown-item f-16" href="#">Another action</a></li>
+                              <li><a class="dropdown-item f-16" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="primary-bg p-5">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="profile_image" class="form-label f-16">Profile Picture</label>
+                                <input type="file" class="dropify" name="profile_image" id="profile_image">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="cover_image" class="form-label f-16">Cover Picture</label>
+                                <input type="file" class="dropify" name="cover_image" id="cover_image">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="profile-title" class="form-label f-16">Profile Title</label>
+                                <input type="text" class="form-control f-16" id="profile-title" placeholder="">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="facebook_link" class="form-label f-16">Facebook Link</label>
+                                <input class="form-control f-16" id="facebook_link" placeholder="">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="twitter_link" class="form-label f-16">Twitter Link</label>
+                                <input class="form-control f-16" id="twitter_link" placeholder="">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="youtube_link" class="form-label f-16">Youtube Link</label>
+                                <input class="form-control f-16" id="youtube_link" placeholder="">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="google_plus_link" class="form-label f-16">Google Plus Link</label>
+                                <input class="form-control f-16" id="google_plus_link" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label f-16">Description</label>
+                                <textarea class="form-control f-16 pt-3" id="description" rows="4"
+                                    placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-center">
+                            <button type="submit" class="common-button">Upload</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- file upload form end -->
+
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/odometer.js"></script>
+    <script src="../assets/js/slick-slider.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropify').dropify({
+                messages: {
+                    'default': 'Upload',
+                    'replace': 'Drag and drop or click to replace',
+                    'remove': 'Remove',
+                    'error': 'Ooops, something wrong happended.'
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
