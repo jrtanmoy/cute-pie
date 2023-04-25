@@ -156,10 +156,14 @@ $('.related-service-active').slick({
     // instead of a settings object
   ]
 });
-$(".play-icon").modalVideo();
 
 
-$('.').slick({
+$(".play-icon").modalVideo({
+  channel:'youtube',
+});
+
+
+$('.video-active').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: false,
@@ -182,7 +186,7 @@ $('.').slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {
@@ -198,3 +202,28 @@ $('.').slick({
   ]
 });
 
+// for maps 
+
+function initMap() {
+  const myLatLng = { lat: 22.818650192043926, lng: 89.55351336533637 };
+  const map = new google.maps.Map(document.getElementById("serviceMap"), {
+    zoom: 20,
+    center: myLatLng,
+  });
+
+  // new google.maps.Marker({
+  //   position: myLatLng,
+  //   map,
+  // });
+
+  const image = 
+  "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+const beachMarker = new google.maps.Marker({
+  position: myLatLng ,
+  map,
+  icon: image,
+  title: "AppsInception",
+});
+}
+
+window.initMap = initMap;
