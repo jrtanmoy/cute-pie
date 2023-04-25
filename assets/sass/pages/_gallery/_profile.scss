@@ -125,7 +125,7 @@
     .profile-social-link {
         width: 40px;
         height: 40px;
-        background-color: $theme-color;
+        // background-color: $theme-color;
         color: white;
         border-radius: 5px;
         display: flex;
@@ -143,6 +143,18 @@
             background-color: $primary-bg;
             color: $theme-color;
         }
+    }
+    .facebook-bg{
+        background-color: #3b5998;
+    }
+    .twitter-bg{
+        background-color: #00acee;
+    }
+    .youtube-bg{
+        background-color: #c4302b;
+    }
+    .google-plus-bg{
+        background-color: #db4a39;
     }
 }
 

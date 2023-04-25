@@ -7,6 +7,12 @@ align-items: center;
 // column-gap: 30px;
 justify-content: space-between;
 }
+.gallery-header-right-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
 .gallery-header-search-input{
     position: relative;
     

@@ -55,10 +55,12 @@
     // position: absolute;
     // top: 0;
     // left: 0;
-    @media (max-width:1300px) {
-        width: 280px;
+    // @media (max-width:1300px) {
+    //     width: 280px;
+    // }
+    @media (max-width: 768px) {
+        display: none;
     }
-
     // &::before {
     //     content: "";
     //     position: absolute;
@@ -107,6 +109,9 @@
     padding: 30px;
     width: calc(100% - 310px);
     min-height: calc(100vh - 88px);
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .dashboard-card {
