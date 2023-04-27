@@ -25,19 +25,36 @@ document.querySelectorAll(".sidebar-list li a").forEach((link) => {
 
 // prevew media
 
-let imgCloseBtn = document.getElementById('imgClose');
-
-imgInp.onchange = evt => {
-  const [file] = imgInp.files
-  let imgCloseBtn = document.getElementById('imgClose');
-  if (file) {
-    imgCloseBtn.style.display = "block"
-    previewImg.src = URL.createObjectURL(file)
+// let imgCloseBtn = document.getElementsByClassName('imgClose');
+// const imgInp = document.getElementsByClassName('imgInp')
+// imgInp.onchange = evt => {
+//   const [file] = imgInp.files
+//   let imgCloseBtn = document.getElementsByClassName('imgClose');
+//   if (file) {
+//     imgCloseBtn.style.display = "block"
+//     previewImg.src = URL.createObjectURL(file)
+//   }
+//   imgCloseBtn.addEventListener("click", function() {
+//     if (file) {
+//       previewImg.src = URL.revokeObjectURL(null)
+//       imgCloseBtn.style.display = "none"
+//     }
+//   });
+// }
+let files
+$(document).on('change','.imgInp',function(e){
+ files = this.files
+  let previewImg =  $(this).parents('.upload-media').find('.previewImg')
+  if(files[0]){
+    previewImg.attr('src', URL.createObjectURL(files[0]))
+    $('.imgClose').css("display", "block")
   }
-  imgCloseBtn.addEventListener("click", function() {
-    if (file) {
-      previewImg.src = URL.revokeObjectURL(null)
-      imgCloseBtn.style.display = "none"
-    }
-  });
-}
+})
+$(document).on('click','.imgClose',function(){
+  let previewImg =  $(this).parents('.upload-media').find('.previewImg')
+  previewImg.attr('src','')
+  $(this).css("display", "none")
+})
+
+
+
