@@ -280,5 +280,9 @@ function openDashboardNav() {
 function closeDashboardNav() {
   document.getElementById("myDashboardSidenav").style.width = "0";
 }
-
+// active menu on dashboard
+  $(".dashboard-sidenav-list li a").on("click", function () {
+    $(".dashboard-sidenav-list li a").removeClass("dashboard-menu-active");
+    $(this).addClass("dashboard-menu-active");
+});
 

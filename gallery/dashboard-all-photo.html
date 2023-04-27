@@ -32,37 +32,37 @@
                     onclick="closeDashboardNav()">&times;</a>
                 <ul class="dashboard-sidenav-list">
                     <li>
-                        <a href="./gallery-dashboard.html" class="dashboard-menu-active color-white">
+                        <a href="./gallery-dashboard.html" class="color-white">
                             <i class="fa fa-id-card"></i>
                             Dashboard
                         </a>
                     </li>
                     <li>
-                        <a href="./dashboard-personal-profile.html" class=" color-white">
+                        <a href="./dashboard-personal-profile.html" class="color-white">
                             <i class="fa fa-user"></i>
                             Personal Profile Page
                         </a>
                     </li>
                     <li>
-                        <a href="./dashboard-edit-profile.html" class=" color-white">
+                        <a href="./dashboard-edit-profile.html" class="color-white">
                             <i class="fa fa-pencil-square-o"></i>
                             Edit Profile Page
                         </a>
                     </li>
                     <li>
-                        <a href="./dashboard-all-photo.html" class=" color-white">
+                        <a href="./dashboard-all-photo.html" class="color-white dashboard-menu-active">
                             <i class="fa fa-picture-o"></i>
                             All Photos
                         </a>
                     </li>
                     <li>
-                        <a href="./dashboard-all-video.html" class=" color-white">
+                        <a href="./dashboard-all-video.html" class="color-white">
                             <i class="fa fa-file-video-o"></i>
                             All Videos
                         </a>
                     </li>
                     <li>
-                        <a href="#" class=" color-white">
+                        <a href="#" class="color-white">
                             <i class="fa fa-key"></i>
                             Change Password
                         </a>
@@ -99,7 +99,7 @@
         <div class="dashboard-sidenav">
             <ul class="dashboard-sidenav-list">
                 <li>
-                    <a href="./gallery-dashboard.html" class="dashboard-menu-active color-white">
+                    <a href="./dashboard-all-photo.html" class="color-white">
                         <i class="fa fa-id-card"></i>
                         Dashboard
                     </a>
@@ -117,7 +117,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./dashboard-all-photo.html" class="color-white">
+                    <a href="./dashboard-all-photo.html" class="color-white dashboard-menu-active">
                         <i class="fa fa-picture-o"></i>
                         All Photos
                     </a>
@@ -137,64 +137,6 @@
             </ul>
         </div>
         <div class="dashboard-main-content-right">
-            <h2>Hi, Pitter Welcome !</h2>
-            <div class="dashboard-card">
-                <div class="row gy-4">
-                    <div class="col-sm-6 col-lg-4 col-xxl-3">
-                        <div class="dashboard-single-card">
-                            <div class="dashboard-card-title">
-                                <h6>Total Photo</h6>
-                                <span class="dashboard-card-count">
-                                    2
-                                </span>
-                            </div>
-                            <div class="dashboard-card-btn">
-                                <span>
-                                    <i class="fa fa-picture-o"></i>
-                                </span>
-                                <a href="#" class="common-button f-13 px-1 py-1">View All</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 col-xxl-3">
-                        <div class="dashboard-single-card">
-                            <div class="dashboard-card-title">
-                                <h6>Total Video</h6>
-                                <span class="dashboard-card-count">
-                                    2
-                                </span>
-                            </div>
-                            <div class="dashboard-card-btn">
-                                <span>
-                                    <i class="fa fa-file-video-o"></i>
-                                </span>
-                                <a href="#" class="common-button f-13 px-1 py-1">View All</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 col-xxl-3">
-                        <div class="dashboard-single-card">
-                            <div class="dashboard-card-title">
-                                <h6>Subscriber</h6>
-                                <span class="dashboard-card-count">
-                                    2
-                                </span>
-                            </div>
-                            <div class="dashboard-card-btn">
-                                <span>
-                                    <i class="fa fa-bell"></i>
-                                </span>
-                                <a href="#" class="common-button f-13 px-1 py-1">View All</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="chart">
-                <h2>
-                    Your Account Traffic
-                </h2>
-            </div>
             <div class="dashboard-photo-table">
                 <div class="table-responsive">
                     <table class="table table-bordered">
@@ -296,34 +238,11 @@
                                     </div>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="dashboard-video-table" id="dashboard-all-video">
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <h6 class="mb-2">
-                            All Video
-                        </h6>
-                        <thead class="dashboard-photo-table-head">
-                            <tr>
-                                <th scope="col">Video</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Total View</th>
-                                <th scope="col">Create Date</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody class="dashboard-photo-table-body">
                             <tr>
                                 <td>
                                     <a href="#">
-                                        <video class="dashboard-table-video"
-                                            poster="../assets/images/gallery/video/video-1-poster.jpg">
-                                            <source src="../assets/images/gallery/video/video-1.mp4" type="video/mp4">
-                                        </video>
+                                        <img class="dashboard-top-part-img"
+                                            src="../assets/images/gallery/profile/profile-img.jpg" alt="profile image">
                                     </a>
                                 </td>
                                 <td>
@@ -350,10 +269,8 @@
                             <tr>
                                 <td>
                                     <a href="#">
-                                        <video class="dashboard-table-video"
-                                            poster="../assets/images/gallery/video/video-2-poster.jpg">
-                                            <source src="../assets/images/gallery/video/video-2.mp4" type="video/mp4">
-                                        </video>
+                                        <img class="dashboard-top-part-img"
+                                            src="../assets/images/gallery/profile/profile-img.jpg" alt="profile image">
                                     </a>
                                 </td>
                                 <td>
@@ -380,10 +297,8 @@
                             <tr>
                                 <td>
                                     <a href="#">
-                                        <video class="dashboard-table-video"
-                                            poster="../assets/images/gallery/video/video-3-poster.jpg">
-                                            <source src="../assets/images/gallery/video/video-3.mp4" type="video/mp4">
-                                        </video>
+                                        <img class="dashboard-top-part-img"
+                                            src="../assets/images/gallery/profile/profile-img.jpg" alt="profile image">
                                     </a>
                                 </td>
                                 <td>
@@ -397,7 +312,91 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <a href="#"
-                                            class="d-flex align-items-center justify-content-center common-button px-1 py-1 me-1 w-100">
+                                            class="d-flex align-items-center justify-content-center common-button px-1 py-1 w-100 me-1">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center common-button px-1 py-1 w-100">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img class="dashboard-top-part-img"
+                                            src="../assets/images/gallery/profile/profile-img.jpg" alt="profile image">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit.
+                                    </a>
+                                </td>
+                                <td>Lorem ipsum dolor sit amet ...</td>
+                                <td>10</td>
+                                <td>10-4-20</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center common-button px-1 py-1 w-100 me-1">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center common-button px-1 py-1 w-100">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img class="dashboard-top-part-img"
+                                            src="../assets/images/gallery/profile/profile-img.jpg" alt="profile image">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit.
+                                    </a>
+                                </td>
+                                <td>Lorem ipsum dolor sit amet ...</td>
+                                <td>10</td>
+                                <td>10-4-20</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center common-button px-1 py-1 w-100 me-1">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center common-button px-1 py-1 w-100">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img class="dashboard-top-part-img"
+                                            src="../assets/images/gallery/profile/profile-img.jpg" alt="profile image">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit.
+                                    </a>
+                                </td>
+                                <td>Lorem ipsum dolor sit amet ...</td>
+                                <td>10</td>
+                                <td>10-4-20</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center common-button px-1 py-1 w-100 me-1">
                                             <i class="fa fa-pencil-square-o"></i>
                                         </a>
                                         <a href="#"
@@ -411,6 +410,27 @@
                     </table>
                 </div>
             </div>
+            <nav class="custome-pagination" aria-label="Page navigation example">
+                <ul class="pagination justify-content-center pt-5 custome-pagination-list">
+                    <li class="page-item custom-page-item mx-3">
+                        <a class="page-link pagination-item  rounded-pill" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item custom-page-item mx-3 "><a class="page-link pagination-item rounded-pill"
+                            href="#">1</a>
+                    </li>
+                    <li class="page-item mx-3"><a class="page-link pagination-item rounded-pill" href="#">2</a>
+                    </li>
+                    <li class="page-item mx-3"><a class="page-link  pagination-item rounded-pill" href="#">3</a>
+                    </li>
+                    <li class="page-item mx-3">
+                        <a class="page-link rounded-pill pagination-item" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
     <!-- Dashboard main content end -->
@@ -420,47 +440,7 @@
     <script src="../assets/js/slick-slider.js"></script>
     <script src="../assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
-    <script>
-
-        // apex chart
-        var options = {
-            series: [{
-                name: 'series1',
-                data: [31, 40, 28, 51, 42, 109, 100]
-            }, {
-                name: 'series2',
-                data: [11, 32, 45, 32, 34, 52, 41]
-            }],
-            chart: {
-                height: 350,
-                type: 'area',
-                toolbar: {
-                    show: false,
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: 'smooth'
-            },
-            xaxis: {
-                type: 'datetime',
-                categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-            },
-            tooltip: {
-                x: {
-                    format: 'dd/MM/yy HH:mm'
-                },
-            },
-        };
-
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-    </script>
-    <script>
-
-    </script>
+    
 </body>
 
 </html>

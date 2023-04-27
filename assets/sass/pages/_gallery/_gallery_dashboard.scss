@@ -161,14 +161,10 @@
     padding: 20px 30px;
 
     li {
-        // &:first-child {
-        //     padding-top: 0px;
-        // }
 
         padding-top: 20px;
 
         a {
-            color: white;
             font-size: 16px;
             display: flex;
             align-items: center;
@@ -185,11 +181,14 @@
             i {
                 font-size: 25px;
                 margin-right: 10px;
+                width: 30px;
             }
         }
     }
 }
-
+.dashboard-menu-active{
+    color: bisque;
+}
 .dashboard-main-content-right {
     padding: 30px;
     width: calc(100% - 280px);
