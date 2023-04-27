@@ -444,6 +444,9 @@
 
 //Live chat start
 .live-chat-title {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 30px !important;
     .single-info {
         margin-bottom: 0;
     }
@@ -466,6 +469,11 @@
         &:hover{
             color: $white;
             background: $theme-color;
+        }
+        @media (max-width: 576px) {
+            height: 30px;
+            width: 30px;
+            font-size: 12px;
         }
     }
 }
