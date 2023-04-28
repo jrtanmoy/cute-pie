@@ -443,6 +443,44 @@
 //message page end
 
 //Live chat start
+.chat-online {
+    padding: 20px 25px;
+    background: $white;
+    .single-online-person {
+        display: inline-block;
+        text-align: center;
+        .online-person-img {
+            position: relative;
+            display: inline-block;
+            img{
+                border-radius: 50%;
+                max-width: 100px;
+                min-height: 100px;
+                object-fit: cover;
+                width: 100%;
+            }
+            .online-status {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: $theme-color;
+                top: 5px;
+                right: 20px;
+            }
+        }
+        .online-person-name {
+            text-align: center;
+            margin-top: 8px;
+            a{
+                font-size: 18px;
+                color: $theme-font;
+                transition: all .3s ease;
+
+            }
+        }
+    }
+}
 .live-chat-title {
     padding-bottom: 30px;
     border-bottom: 1px solid #eeeeee;
@@ -908,6 +946,9 @@
                align-items: center;
                .react-icon {
                 width: 15px;
+               }
+               .video-react-icon {
+                color: $theme-color;
                }
                .react-count{
                 padding-left: 5px;
