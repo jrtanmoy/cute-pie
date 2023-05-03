@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUTEPIE</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap-select.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/select2.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="../assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/sass/style.css">
+
+
+
+</head>
+
+<body>
+    <div class="backdrop" onclick="closeBackdrop()"></div>
+    <!-- camp link start -->
+    <div class="camp-link">
+        <div class="container">
+            <ul class="breadcumb">
+                <li>
+                    <a href="#">Home</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>Shipping</li>
+            </ul>
+        </div>
+    </div>
+    <!-- camp link end -->
+    <!-- shop card section start-->
+    <section class="checkout-details-content">
+        <div class="container">
+            <h2 class="section-title">Shipping</h2>
+            <div class="orders-table">
+                <div class="table-responsive">
+                    <table class="table">
+                        <h6 class="mb-2">
+                        </h6>
+                        <thead class="orders-table-head">
+                            <tr>
+                                <th scope="col">Division</th>
+                                <th scope="col">District</th>
+                                <th scope="col">Thana</th>
+                                <th scope="col">Area</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="orders-table-body">
+                            <tr>
+                                <td>
+                                    Khulna
+                                </td>
+                                <td>
+                                    Khulna
+                                </td>
+                                <td>Daulatpur</td>
+                                <td>Lorem, ipsum dolor, sit amet.</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center common-button px-2 py-1  me-1">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center common-button px-2 py-1 ">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <form action="" class="ptop-40">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="billing-details">
+                            <h3 class="section-subtitle">Shipping details</h3>
+                            <div class="mb-3">
+                                <label for="select-country" class="form-label f-14">Country / Region *</label>
+                                <select id="select-country"
+                                    class="js-example-basic-single form-select rating-custom-select f-14"
+                                    name="country">
+                                    <option value="ban">Bangladesh</option>
+                                    <option value="1">AAA</option>
+                                    <option value="2">BBB</option>
+                                    <option value="3">DDD</option>
+                                    <option value="4">FFF</option>
+                                    <option value="5">EEE</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="street-name" class="form-label f-14">Street address *</label>
+                                <input type="text" class="form-control f-14" id="street-name"
+                                    placeholder="House number and street name">
+                                <input type="text" class="form-control f-14 mt-3" id="street-name"
+                                    placeholder="Apartment, suite, unit, etc. (optional)">
+                            </div>
+                            <div class="mb-3">
+                                <label for="town-name" class="form-label f-14">Town / City *</label>
+                                <input type="text" class="form-control f-14" id="town-name" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="select-state" class="form-label f-14">State *</label>
+                                <select id="select-state"
+                                    class="js-example-basic-single form-select rating-custom-select f-14"
+                                    name="country">
+                                    <option value="ban">Khulna</option>
+                                    <option value="1">AAA</option>
+                                    <option value="2">BBB</option>
+                                    <option value="3">DDD</option>
+                                    <option value="4">FFF</option>
+                                    <option value="5">EEE</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="zip-code" class="form-label f-14">ZIP Code *</label>
+                                <input type="text" class="form-control f-14" id="zip-code" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label f-14">Phone *</label>
+                                <input type="text" class="form-control f-14" id="phone" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label f-14">Email address *</label>
+                                <input type="email" class="form-control f-14" id="email" placeholder="">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label f-14">Add a Label</label>
+                                <div>
+                                    <input type="radio" id="home" name="location_label" value="home">
+                                    <label for="home" class="me-3">Home</label>
+                                    <input type="radio" id="work" name="location_label" value="work">
+                                    <label for="work" class="me-3">Work</label>
+                                    <input type="radio" id="partner" name="location_label" value="partner">
+                                    <label for="partner" class="me-3">Partner</label>
+                                    <input type="radio" id="other" name="location_label" value="other">
+                                    <label for="other" class="me-3">Other</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
+    <!-- <script src="/assets/js/countrypicker.js"></script> -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
+
+    <script src="../assets/js/odometer.js"></script>
+    <script src="../assets/js/slick-slider.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+        // $('input[name="payment_method"]').on('click', function () {
+        //     var radioValue = $('input[name="payment_method"]:checked').val();
+        //     // console.log(radioValue,radioValue.val());
+        // });
+        $(".payment-methods-list li a input").on("click", function () {
+            $('.payment-method-box').addClass("payment-d-none");
+            $('.payment-method-box').removeClass("payment-d-block");
+            // $(this).parent().siblings('.payment-method-box').css({
+            //     transition: 'all 1s ease-in-out'
+            // });
+            $(this).parent().siblings('.payment-method-box').removeClass("payment-d-none");
+            $(this).parent().siblings('.payment-method-box').addClass("payment-d-block");
+        });
+    </script>
+
+</body>
+
+</html>
