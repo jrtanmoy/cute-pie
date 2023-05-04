@@ -158,10 +158,6 @@ $('.related-service-active').slick({
 });
 
 
-$(".play-icon").modalVideo({
-  channel:'youtube',
-});
-
 
 
 $(document).ready(function(){
