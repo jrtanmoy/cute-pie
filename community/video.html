@@ -316,16 +316,18 @@
                             </div>
                         </div>
                         <div class="video-img" data-bs-toggle="modal" data-bs-target="#videoShow">
-                            <img src="../assets/images/community/video/video-1.jpg" alt="img">
+                            <video class="community-video-poster">
+                                <source src="../assets/images/community/movie.mp4" type="video/mp4">
+                            </video>
                             <div class="vido-play-icon">
                                 <i class="fa fa-youtube-play" aria-hidden="true"></i>
                             </div>
                         </div>
                         <!-- video show modal start -->
-                        <div class="modal fade video-modal-show" id="videoShow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade video-modal-show" id="videoShow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="document.getElementById('comunityVideoPause').pause();">
                             <div class="modal-dialog modal-dialog-centered">
                               <div class="modal-content">
-                                  <button type="button" class="vido-modal-close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>                                
+                                  <button type="button" class="vido-modal-close-btn" data-bs-dismiss="modal" aria-label="Close" onclick="document.getElementById('comunityVideoPause').pause();"><i class="fa fa-times" aria-hidden="true"></i></button>                                
                                 <div class="modal-body">
                                     <div class="single-info">
                                         <div class="page-img"><a href="#"><img src="../assets/images/community/home/right/birthday01.jpg" alt="img"></a></div>
@@ -338,7 +340,7 @@
                                         <p>Donec rutrum congue leo eget malesuada nulla quis lorem ut libero malesuada feugiat donec rutrum congue leo eget malesuada donec rutrum congue leo eget malesuada. </p>
                                         <p>Praesent sapien massa convallis a pellentesque non nisi curabitur non nulla sit amet nisl tempus convallis lectus.</p>
                                     </div>
-                                    <video controls class="playing-video">
+                                    <video controls class="playing-video" id="comunityVideoPause">
                                         <source src="../assets/images/community/movie.mp4" type="video/mp4">
                                     </video>
                                     <div class="vido-cm-div video-coment-list">
