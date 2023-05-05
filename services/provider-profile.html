@@ -444,35 +444,53 @@
                         <div class="content-wrap">
                             <div class="video-active">
                                 <div class="single-video">
-                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">                                        
-                                        <img src="../assets/images/services/video/hqdefault.jpg" alt="image">                                        
+                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                        <video class="provider-video-poster">
+                                            <source src="../assets/images/community/movie.mp4" type="video/mp4">
+                                        </video>
                                         <div  class="play-icon">
                                             <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>                                      
+                                        </div>                                   
                                     </div>
                                 </div>
                                 <div class="single-video">
-                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">                                        
-                                        <img src="../assets/images/services/video/hqdefault.jpg" alt="image">                                        
-                                        <div  class="play-icon" >
+                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                        <video class="provider-video-poster">
+                                            <source src="../assets/images/community/movie.mp4" type="video/mp4">
+                                        </video>
+                                        <div  class="play-icon">
                                             <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>                                      
+                                        </div>                                   
                                     </div>
                                 </div>
                                 <div class="single-video">
-                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">                                        
-                                        <img src="../assets/images/services/video/hqdefault.jpg" alt="image">                                        
-                                        <div  class="play-icon" >
+                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                        <video class="provider-video-poster">
+                                            <source src="../assets/images/community/movie.mp4" type="video/mp4">
+                                        </video>
+                                        <div  class="play-icon">
                                             <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>                                      
+                                        </div>                                   
                                     </div>
                                 </div>
                                 <div class="single-video">
-                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">                                        
-                                        <img src="../assets/images/services/video/hqdefault.jpg" alt="image">                                        
-                                        <div  class="play-icon" >
+                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                        <video class="provider-video-poster">
+                                            <source src="../assets/images/community/movie.mp4" type="video/mp4">
+                                        </video>
+                                        <div  class="play-icon">
                                             <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>                                      
+                                        </div>                                   
+                                    </div>
+                                </div>
+                                <div class="single-video">
+                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                        <video class="provider-video-poster">
+                                            <source src="../assets/images/community/movie.mp4" type="video/mp4">
+                                        </video>
+                                        <div  class="play-icon">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>                                   
                                     </div>
                                 </div>
                             </div>                                    
@@ -695,23 +713,14 @@
     
 
     <!-- video show modal start -->
-    <div class="modal fade" id="serviceVideoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="serviceVideoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="document.getElementById('videoPlaying').pause();">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content service-video-modal">
-                <button type="button" class="service-video-modal-close" data-bs-dismiss="modal" aria-label="Close" onclick="document.getElementById('videPlaying').pause();" > <i class="fa fa-times"></i></button>                
+                <button type="button" class="service-video-modal-close" data-bs-dismiss="modal" aria-label="Close" onclick="document.getElementById('videoPlaying').pause();"> <i class="fa fa-times"></i></button>                
                 <div class="modal-body">
-                      <vm-player playsinline class="service-playing-video" id="videPlaying">
-                        <vm-video
-                          cross-origin="true"                          
-                          poster="../assets/images/services/video/hqdefault.jpg"
-                        >
-                          <source
-                            data-src="../assets/images/community/movie.mp4"
-                            type="video/mp4"
-                          />
-                        </vm-video>                
-                        <vm-default-ui></vm-default-ui>
-                      </vm-player>
+                    <video controls class="service-playing-video" id="videoPlaying">
+                        <source src="../assets/images/community/movie.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -732,6 +741,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script> <!--this api just For Development Purpose Only-->
     <script src="../assets/js/services/script.js"></script>
+
 
 </body>
 

@@ -206,6 +206,7 @@ $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
   console.log('new tab')
   $('.video-active').slick('setPosition');
 })
+
 function initMap() {
   const myLatLng = { lat: 22.818650192043926, lng: 89.55351336533637 };
   const map = new google.maps.Map(document.getElementById("serviceMap"), {
