@@ -57,6 +57,19 @@ $(document).on('click','.imgClose',function(){
   $(this).css("display", "none")
 })
 
+$(document).on('change','.imgInp',function(e){
+  files = this.files
+  if (files[1]) {
+    $('.status-video').css("display", "none")
+  } else {
+    let source = $('.video-status-here');
+    source[0].src = URL.createObjectURL(this.files[0]);
+    source.parent()[0].load()
+    $('.status-video').css("display", "block")
+  }
+})
+
+
 
 // online person active 
 $('.chat-online').slick({
@@ -117,4 +130,10 @@ $('.video-react-icon i').click(function(){
   } else {
     $(this).removeClass('fa-heart').addClass('fa-heart-o')    
   }
+})
+
+
+$('.replay-tag').on('click', function(){
+  // console.log("sjakf");
+  $(this).parent().parent().siblings(".single-replay-comnt").children(".replay-new-comment").css("display", "block")
 })
