@@ -1356,6 +1356,14 @@
     background-color: $theme-color;
 
 }
+.ecomm-sidenav-closebtn{
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    border-bottom: 1px solid rgba($color: $theme-color, $alpha: 1.0);
+    color: white;
+    background-color: $theme-color;
+}
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {

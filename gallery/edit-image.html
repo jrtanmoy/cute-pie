@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUTEPIE</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/select2.min.css">
+    <link rel="stylesheet" href="../assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+    <!-- Dashboard header start -->
+    <div class="dashboard-header">
+        <div class="dashboard-logo">
+            <div class="dasboard-menuber" onclick="openDashboardNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="myDashboardSidenav" class="dashboard-sidenav-small">
+                <a href="javascript:void(0)" class="dashborard-sidenav-closebtn" onclick="closeDashboardNav()">&times;</a>
+                <ul class="dashboard-sidenav-list">
+                    <li>
+                        <a href="./gallery-dashboard.html" class="color-white">
+                            <i class="fa fa-id-card"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./dashboard-personal-profile.html"class="color-white">
+                            <i class="fa fa-user"></i>
+                            Personal Profile Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./dashboard-edit-profile.html"  class="color-white dashboard-menu-active">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit Profile Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./dashboard-all-photo.html" class="color-white">
+                            <i class="fa fa-picture-o"></i>
+                            All Photos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./dashboard-all-video.html" class="color-white">
+                            <i class="fa fa-file-video-o"></i>
+                            All Videos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="color-white">
+                            <i class="fa fa-key"></i>
+                            Change Password
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <img src="../assets/images/logo.png" alt="logo">
+        </div>
+        <div class="dashboard-header-right">
+            <a href="#" class="common-button d-none d-lg-block">Add A Post</a>
+            <div class="d-flex align-items-center dashboard-header-profile">
+                <i class="fa fa-plus d-lg-none"></i>
+                <i class="fa fa-home"></i>
+                <img class="dashboard-top-part-img me-2" src="../assets/images/gallery/profile/profile-img.jpg"
+                    alt="profile image">
+                <div class="dropdown">
+                    <button class="dropdown-toggle add-file-custom-dropdown" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="d-none d-md-inline-block">Alfred Nobel</span>
+                    </button>
+                    <ul class="dropdown-menu add-file-custom-dropdown-menu">
+                        <li><a class="dropdown-item f-16" href="#">Profile</a></li>
+                        <li><a class="dropdown-item f-16" href="#">Edit Profile</a></li>
+                        <li><a class="dropdown-item f-16" href="#">Change Password</a></li>
+                        <li><a class="dropdown-item f-16" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dashboard header end -->
+    <!-- Dashboard main content start -->
+    <div class="dashboard-main-content">
+        <div class="dashboard-sidenav">
+            <ul class="dashboard-sidenav-list">
+                <li>
+                    <a href="./gallery-dashboard.html" class="color-white">
+                        <i class="fa fa-id-card"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="./dashboard-personal-profile.html" class="color-white">
+                        <i class="fa fa-user"></i>
+                        Personal Profile Page
+                    </a>
+                </li>
+                <li>
+                    <a href="./dashboard-edit-profile.html" class="color-white dashboard-menu-active">
+                        <i class="fa fa-pencil-square-o"></i>
+                        Edit Profile Page
+                    </a>
+                </li>
+                <li>
+                    <a href="./dashboard-all-photo.html" class="color-white">
+                        <i class="fa fa-picture-o"></i>
+                        All Photos
+                    </a>
+                </li>
+                <li>
+                    <a href="./dashboard-all-video.html" class="color-white">
+                        <i class="fa fa-file-video-o"></i>
+                        All Videos
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="color-white">
+                        <i class="fa fa-key"></i>
+                        Change Password
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard-main-content-right">
+            <!-- file upload form start -->
+            <div class="file-upload">
+                <div class="container">
+                    <div class="file-upload-content">
+                        <div class="file-upload-top-part">
+                            <h2 class="section-stitle">Profile Information</h2>
+                        </div>
+
+                        <div class="primary-bg p-5">
+                            <form action="">
+                                <div class="row">
+                                    <div class="mb-3">
+                                        <label for="select-gallery" class="form-label">Gallery</label>
+                                        <select  id="select-gallery"  class="js-example-basic-single form-select rating-custom-select" name="country" >
+                                            <option value="ban">ABCDE</option>
+                                            <option value="1">AAA</option>
+                                            <option value="2">BBB</option>
+                                            <option value="3">DDD</option>
+                                            <option value="4">FFF</option>
+                                            <option value="5">EEE</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="title" class="form-label f-16">Title</label>
+                                        <input type="text" class="form-control f-16" id="title" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="description" class="form-label f-16">Description</label>
+                                        <textarea class="form-control f-16 pt-3" id="description" rows="2"
+                                            placeholder=""></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label f-16">Location</label>
+                                        <input type="text" class="form-control f-16" id="location" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="image" class="form-label f-16">Image</label>
+                                        <input type="file" class="dropify" name="image" id="image">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <button type="submit" class="common-button">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- file upload form end -->
+        </div>
+    </div>
+    <!-- Dashboard main content end -->
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
+    <script src="../assets/js/odometer.js"></script>
+    <script src="../assets/js/slick-slider.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+        $(document).ready(function () {
+            $('.dropify').dropify({
+                messages: {
+                    'default': 'Upload',
+                    'replace': 'Drag and drop or click to replace',
+                    'remove': 'Remove',
+                    'error': 'Ooops, something wrong happended.'
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
