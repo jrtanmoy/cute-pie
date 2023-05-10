@@ -230,3 +230,20 @@ const beachMarker = new google.maps.Marker({
 }
 
 window.initMap = initMap;
+
+
+// video send to modal
+$(document).on("click", '.video-thumbnil', function() {
+  const video_src =  $(this).find('video source').attr('src')
+  let video_modal = $('#videoPlaying source').attr('src',video_src)
+  
+    // const videoPlaying = $('.provider-video-poster').get(0).currentSrc;
+    // console.log(videoPlaying, "ddd")
+    // const modalVide = $('#videoPlaying');
+    // console.log(modalVide, "modddalll");
+    // // console.log(modalVide, "vido");
+    // let vidmod = $(this).find('.service-playing-video')
+    // let modal_video = $('#videoPlaying')
+    let modal_video =document.getElementById('videoPlaying');
+    modal_video.load();
+})

@@ -43,7 +43,7 @@ document.querySelectorAll(".sidebar-list li a").forEach((link) => {
 // }
 
 let files
-$(document).on('change','.imgInp',function(e){
+$(document).on('change','.imgInp', function(e){
  files = this.files
   let previewImg =  $(this).parents('.upload-media').find('.previewImg')
   if(files[0]){
@@ -132,8 +132,6 @@ $('.video-react-icon i').click(function(){
   }
 })
 
-
-$('.replay-tag').on('click', function(){
-  // console.log("sjakf");
-  $(this).parent().parent().siblings(".single-replay-comnt").children(".replay-new-comment").css("display", "block")
+$(document).on('click', '.replay-tag', function() {
+  $(this).parents(".comment-details").find(".replay-new-comment").css("display", "block")
 })

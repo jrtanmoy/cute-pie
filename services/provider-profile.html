@@ -444,7 +444,7 @@
                         <div class="content-wrap">
                             <div class="video-active">
                                 <div class="single-video">
-                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                    <div class="video-thumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
                                         <video class="provider-video-poster">
                                             <source src="../assets/images/community/movie.mp4" type="video/mp4">
                                         </video>
@@ -454,7 +454,27 @@
                                     </div>
                                 </div>
                                 <div class="single-video">
-                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                    <div class="video-thumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                        <video class="provider-video-poster">
+                                            <source src="../assets/images/community/20 Second Timer Bomb [3D TIMER] 💣.mkv" type="video/mp4">
+                                        </video>
+                                        <div  class="play-icon">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>                                   
+                                    </div>
+                                </div>
+                                <div class="single-video">
+                                    <div class="video-thumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                        <video class="provider-video-poster">
+                                            <source src="../assets/images/community/Short Song (English Song)🎵 [W Lyrics] 30 seconds.mkv" type="video/mp4">
+                                        </video>
+                                        <div  class="play-icon">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>                                   
+                                    </div>
+                                </div>
+                                <div class="single-video">
+                                    <div class="video-thumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
                                         <video class="provider-video-poster">
                                             <source src="../assets/images/community/movie.mp4" type="video/mp4">
                                         </video>
@@ -464,27 +484,7 @@
                                     </div>
                                 </div>
                                 <div class="single-video">
-                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
-                                        <video class="provider-video-poster">
-                                            <source src="../assets/images/community/movie.mp4" type="video/mp4">
-                                        </video>
-                                        <div  class="play-icon">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>                                   
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
-                                        <video class="provider-video-poster">
-                                            <source src="../assets/images/community/movie.mp4" type="video/mp4">
-                                        </video>
-                                        <div  class="play-icon">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>                                   
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <div class="video-tumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
+                                    <div class="video-thumbnil" data-bs-toggle="modal" data-bs-target="#serviceVideoModal">
                                         <video class="provider-video-poster">
                                             <source src="../assets/images/community/movie.mp4" type="video/mp4">
                                         </video>
@@ -718,8 +718,8 @@
             <div class="modal-content service-video-modal">
                 <button type="button" class="service-video-modal-close" data-bs-dismiss="modal" aria-label="Close" onclick="document.getElementById('videoPlaying').pause();"> <i class="fa fa-times"></i></button>                
                 <div class="modal-body">
-                    <video controls class="service-playing-video" id="videoPlaying">
-                        <source src="../assets/images/community/movie.mp4" type="video/mp4">
+                    <video controls autoplay class="service-playing-video" id="videoPlaying">
+                        <source src="" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -741,6 +741,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script> <!--this api just For Development Purpose Only-->
     <script src="../assets/js/services/script.js"></script>
+
 
 
 </body>
