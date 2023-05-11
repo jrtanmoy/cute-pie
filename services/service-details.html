@@ -154,10 +154,29 @@
                             </div>                            
                         </div>
                         <div class="service-provider-info">
-                            <h6 class="service-content-title">Video</h6>
-                            <div class="service-video">
-                                <iframe src="https://www.youtube.com/embed/RkHOXGHVzkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>                            
+                            <h6 class="service-content-title">Video</h6>                            
+                            <div class="details-video-div" data-bs-toggle="modal" data-bs-target="#serviceDetailsVideo">
+                                <video class="service-video" >
+                                    <source src="../assets/images/community/20 Second Timer Bomb [3D TIMER] 💣.mkv" type="video/mp4">
+                                </video>
+                                <div class="video-play-icon">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <!-- modal for open video start-->
+                            <div class="modal fade" id="serviceDetailsVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="document.getElementById('videoPlaying').pause();">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content service-video-modal">
+                                        <button type="button" class="service-video-modal-close" data-bs-dismiss="modal" aria-label="Close" onclick="document.getElementById('videoPlaying').pause();"> <i class="fa fa-times"></i></button>                
+                                        <div class="modal-body">
+                                            <video controls autoplay class="service-playing-video" id="videoPlaying">
+                                                <source src="" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal for open video end-->
                         </div>
                         <div class="service-provider-info">
                             <h6 class="service-content-title">Reviews</h6>
@@ -487,6 +506,9 @@
     <script src="../assets/js/odometer.js"></script>
     <script src="../assets/js/slick-slider.js"></script>
     <script src="../assets/js/services/script.js"></script>
+    <script>
+        
+    </script>
 </body>
 
 </html>
