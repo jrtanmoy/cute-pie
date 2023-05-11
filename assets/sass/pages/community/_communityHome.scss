@@ -791,24 +791,67 @@
                 padding-left: 45px;
             }
             .coment-info {
-                h6 {
-                    a {
-                        font-size: 18px;
-                        color: $theme-font;
-                        transition: all .3s ease;
-                        display: block;
-                        transition: all .3s ease;
-                        &:hover{
-                            color: $theme-color;
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                &:hover{
+                    .comment-option {
+                        .comment-option-btn {
+                            visibility: visible;
                         }
                     }
                 }
-                .comment-time {
-                    display: block;
-                    font-size: 14px;
-                    color: $theme-font;
-                    font-weight: 300;
-                    margin: 5px 0;
+                .coment-authore-div{
+                    h6 {
+                        a {
+                            font-size: 18px;
+                            color: $theme-font;
+                            transition: all .3s ease;
+                            display: block;
+                            transition: all .3s ease;
+                            &:hover{
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                    .comment-time {
+                        display: block;
+                        font-size: 14px;
+                        color: $theme-font;
+                        font-weight: 300;
+                        margin: 5px 0;
+                    }
+                }
+                .comment-option {
+                    .comment-option-btn {
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                        background: rgba(0,0,0,0);
+                        color: #091727;
+                        transition: all .3s ease;
+                        visibility: hidden;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    .comment-option-dropdown{
+                        width: 150px;
+                        max-height: 85px;      
+                        padding: 10px;
+                        inset: 15px 0px 0 auto !important;
+                        .post-option-item {
+                            font-size: 13px;
+                            color: $theme-font;
+                            transition: all .3s ease;
+                            &:hover{
+                                color: $theme-color;
+                            }
+                        }       
+                    }
                 }
             }
             .comment-content {
@@ -816,6 +859,9 @@
                 font-size: 14px;
                 font-weight: 400;
                 margin-bottom: 5px;
+                @media (max-width: 576px) {
+                    font-size: 12px;
+                }
             }
             .coment-react {
                 display: flex;
