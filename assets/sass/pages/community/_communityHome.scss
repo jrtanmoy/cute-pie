@@ -745,15 +745,19 @@
             transition: all .3s ease;
             li {
                 padding: 5px;
-                a {
-                    img {
-                        transform: scale(1);
-                        transition: all .3s ease;
-                        &:hover{
-                            transform: scale(1.3);
-                        }
+                img {
+                    transform: scale(1);
+                    transition: all .3s ease;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.3);
                     }
                 }
+            }
+        }
+        .react-option .active{
+            img{
+                transform: scale(1.3);
             }
         }
         &:hover{
@@ -768,8 +772,14 @@
 .post-comment-list {
     padding-top: 25px;
     .single-comment {
-        position: relative;
-        margin-bottom: 25px;
+        .parent-comment {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 85px;
+            @media (max-width: 576px) {
+                padding-left: 45px;
+            }
+        }
         .comment-img {
             position: absolute;
             top: 0;
@@ -786,10 +796,6 @@
             }
         }
         .comment-details {
-            padding-left: 85px;
-            @media (max-width: 576px) {
-                padding-left: 45px;
-            }
             .coment-info {
                 display: flex;
                 align-items: start;
@@ -798,6 +804,7 @@
                     .comment-option {
                         .comment-option-btn {
                             visibility: visible;
+                            background: #dcd9d9;
                         }
                     }
                 }
@@ -828,27 +835,32 @@
                         outline: none;
                         font-size: 16px;
                         background: rgba(0,0,0,0);
-                        color: #091727;
+                        color: $theme-color;
                         transition: all .3s ease;
                         visibility: hidden;
-                        &:hover{
-                            color: $theme-color;
-                        }
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 7px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         &::after{
                             display: none;
                         }
                     }
                     .comment-option-dropdown{
                         width: 150px;
-                        max-height: 85px;      
-                        padding: 10px;
+                        max-height: 80px;
                         inset: 15px 0px 0 auto !important;
                         .post-option-item {
                             font-size: 13px;
                             color: $theme-font;
                             transition: all .3s ease;
+                            cursor: pointer;
+                            padding: 10px;
                             &:hover{
-                                color: $theme-color;
+                                color: $white;
+                                background: $theme-color;
                             }
                         }       
                     }
@@ -861,6 +873,41 @@
                 margin-bottom: 5px;
                 @media (max-width: 576px) {
                     font-size: 12px;
+                }
+            }
+            textarea.comment-content{
+                width: 100%;
+                padding: 15px;
+                line-height: 15px;
+                color: #6B7C8F;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 5px;
+                outline: none;
+                border-radius: 5px;
+                resize: none;
+                overflow: hidden;
+                @media (max-width: 576px) {
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+            }
+            .comment-div {
+                position: relative;
+                #textarea_btn {
+                    position: absolute;
+                    right: 5px;
+                    bottom: 12px;
+                    font-size: 15px;
+                    border: none;
+                    outline: none;
+                    color: #ff5b2e;
+                    display: none;
+                    height: 20px;
+                    width: 25px;
+                    text-align: center;
+                    border-radius: 5px;
+                    background: transparent;
                 }
             }
             .coment-react {
