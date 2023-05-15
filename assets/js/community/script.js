@@ -157,8 +157,6 @@ $(document).on("click", "#editComment", function() {
 })
 $(document).on("click", "#textarea_btn", function() {
  let edit_tex = $(this).parents(".comment-details").find('.comment-content');
- console.log(edit_tex, "text");
-//  let aa = edit_tex.val()
 
  edit_tex.replaceWith($(`<p class="comment-content">${edit_tex.val()}</p>`))
  $(this).css('display', 'none')
