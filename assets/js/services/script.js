@@ -240,13 +240,13 @@ window.initMap = initMap;
 //   // const videoPlaying = document.getElementById('videoPlaying')
 //   // videoPlaying.load()
 // })
-const details_video = document.getElementById('service_video');
-details_video.onclick = function() {
-  let video_source = this.children[0].src
-  let modal_details_video = document.getElementById('videoPlaying')
-  let varrrr = modal_details_video.children[0].src = video_source
-  modal_details_video.load() 
-}
+// const details_video = document.getElementById('service_video');
+// details_video.onclick = function() {
+//   let video_source = this.children[0].src
+//   let modal_details_video = document.getElementById('videoPlaying')
+//   let varrrr = modal_details_video.children[0].src = video_source
+//   modal_details_video.load() 
+// }
 
 
 

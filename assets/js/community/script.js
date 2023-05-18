@@ -24,24 +24,6 @@ document.querySelectorAll(".sidebar-list li a").forEach((link) => {
 });
 
 // prevew media
-
-// let imgCloseBtn = document.getElementsByClassName('imgClose');
-// const imgInp = document.getElementsByClassName('imgInp')
-// imgInp.onchange = evt => {
-//   const [file] = imgInp.files
-//   let imgCloseBtn = document.getElementsByClassName('imgClose');
-//   if (file) {
-//     imgCloseBtn.style.display = "block"
-//     previewImg.src = URL.createObjectURL(file)
-//   }
-//   imgCloseBtn.addEventListener("click", function() {
-//     if (file) {
-//       previewImg.src = URL.revokeObjectURL(null)
-//       imgCloseBtn.style.display = "none"
-//     }
-//   });
-// }
-
 let files
 $(document).on('change','.imgInp', function(e){
  files = this.files
@@ -51,7 +33,6 @@ $(document).on('change','.imgInp', function(e){
     $('.imgClose').css("display", "block")
   }
 })
-
 
 $(document).on('change','.vidInp',function(e){
   files = this.files
